@@ -1,5 +1,21 @@
-task main()
-{
-  //Test
+task FindWall(){
+  float points[10];
+  float closestPointDistance = 9999;
+  float closestPointDegrees
+
+  //Gets and saves all the points
+  for(int i = 0; i < ArrayLen(points); i++){
+    ROBRotate(360 / ArrayLen(points));
+    points[i] = ULTARSONICSENSOR.length;
+    if(point[i] < closestPoint){
+      closestPointDistance = point[i];
+      closestPointDegrees = (360 / ArrayLen(points)) * i;
+    }
+  }
+  //Rotate to the correct point
+  if(closestPointDegrees > 180)
+    ROBRotate((closestPointDegrees - 180) * -1)
+  else
+    ROBRotate(closestPointDegrees);
 
 }
