@@ -8,5 +8,5 @@ sub RotateRobot(float deg)
 
      float rotateDegrees = (wheelCir / circleCir) * (deg / ((wheelCir / circleCir) * 360));
 
-     RotateMotorEx(OUT_AB, 50, deg, 100, true, true);
+     RotateMotorEx(OUT_AB, 100, deg, 100, true, true);
 }
