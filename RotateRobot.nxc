@@ -1,3 +1,6 @@
+#define WHEEL_RADIUS 2.75
+#define WHEEL_DISTANCE 18.3
+
 sub RotateRobot(float deg)
 {
      float wheelCir = 2 * WHEEL_RADIUS * 3.141592; /*Wheel circumference.*/
@@ -5,7 +8,5 @@ sub RotateRobot(float deg)
 
      float rotateDegrees = (wheelCir / circleCir) * (deg / ((wheelCir / circleCir) * 360));
 
-     RotateMotor(RIGHT_ENGINE, rightEngineCompensation, rotateDegrees / 2);  /*right motor*/
-     RotateMotor(LEFT_ENGINE, leftEngineCompensation, -rotateDegrees / 2);   /*left motor*/
-
+     RotateMotorEx(ENGINELEFTANDRIGHT, 100, rotateDegrees, 100, true, true);
 }
