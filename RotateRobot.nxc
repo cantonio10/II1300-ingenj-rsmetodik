@@ -1,12 +1,13 @@
 #define WHEEL_RADIUS 2.75
-#define WHEEL_DISTANCE 18.3
+#define WHEEL_DIAMETER 5.8
+#define WHEEL_DISTANCE 18.2
 
 sub RotateRobot(float deg)
 {
-     float wheelCir = 2 * WHEEL_RADIUS * 3.141592;
+     float wheelCir = WHEEL_DIAMETER * 3.141592;
      float circleCir = WHEEL_DISTANCE * 3.141592;
 
-     float rotateDegrees = (wheelCir / circleCir) * (deg / ((wheelCir / circleCir) * 360));
+     float rotateDegrees = (((deg / 360) * circleCir) / wheelCir) * 360;
 
-     RotateMotorEx(OUT_AB, 50, deg, 100, true, true);
+     RotateMotorEx(OUT_AB, 50, rotateDegrees, 100, true, true);
 }
