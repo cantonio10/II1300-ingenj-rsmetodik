@@ -1,105 +1,59 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__float_stack_001main	10	1	0	4	10
-1	__signed_stack_001RotateRobot	6	1	4	4	2
-2	__DU0SetSensorLowspeed_inline_main	5	1	8	4	5
-3	__signed_stack_001main	6	1	12	4	10
-4	__rotate_theAngle3	5	1	16	4	2
-5	__float_stack_004RotateRobot	10	1	20	4	2
-6	__float_stack_002RotateRobot	10	1	24	4	4
-7	__float_stack_003RotateRobot	10	1	28	4	4
-8	__CLSWMutex1	9	0	32	4	2
-9	__CLSCSMutex1	9	0	36	4	2
-10	__RLSBmutex1	9	0	40	4	2
-11	__CLSRMutex1	9	0	44	4	2
-12	__DF0RotateRobot	10	1	48	4	7
-13	__D0SetSensorLowspeed_inline_main	6	1	52	4	2
-14	__D0main	6	1	56	4	14
-15	__DF0main	10	1	60	4	10
+0	__RotateRobot_7qG2_deg_7qG2_000	10	1	0	4	4
+1	__float_stack_004RotateRobot	10	1	4	4	2
+2	__DF0RotateRobot	10	1	8	4	4
+3	__RotateRobot_7qG2_wheelCir_7qG2_000	10	1	12	4	2
+4	__RotateRobot_7qG2_turnFactor_7qG2_000	10	1	16	4	4
+5	__float_stack_001RotateRobot	10	1	20	4	6
+6	__signed_stack_001RotateRobot	6	1	24	4	6
+7	__float_stack_002RotateRobot	10	1	28	4	2
+8	__float_stack_003RotateRobot	10	1	32	4	2
+9	__rotate_theAngle3	5	1	36	4	2
+10	__constValf17P278756	10	0	40	4	1
+11	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	44	4	2
+12	__RotateRobot_7qG2_rotateDegrees_7qG2_000	10	1	48	4	2
+13	__rotate_angle3	6	1	52	4	5
+14	__D0main	6	1	56	4	2
+15	__constValf57P4911336	10	0	60	4	1
 16	__RotateRobot_7qG2_circleCir_7qG2_000	10	1	64	4	2
-17	__constValf17P278756	10	0	68	4	1
-18	__constValf57P4911336	10	0	72	4	1
-19	__main_7qG2_closestPointDistance_7qG2_000	10	1	76	4	3
-20	__main_7qG2_closestPointDegrees_7qG2_000	10	1	80	4	4
-21	__RotateRobot_7qG2_deg_7qG2_000	10	1	84	4	5
-22	__rotate_angle3	6	1	88	4	5
-23	__RotateRobot_7qG2_wheelCir_7qG2_000	10	1	92	4	2
-24	__constVal9999	4	0	96	2	1
-25	__constVal360	4	0	98	2	1
-26	__main_7qG2_i_7qG2_001	4	1	100	2	8
-27	__constVal180	4	0	102	2	2
-28	__rotate_OldRotCount3	4	1	104	2	2
-29	__rotate_RotCount3	4	1	106	2	4
-30	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	108	1	4
-31	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	109	1	2
-32	__RLSBytesCount1	1	1	110	1	7
-33	__RLSBIterations1	1	1	111	1	4
-34	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	112	1	2
-35	__constVal15	2	0	113	1	2
-36	____initialize_global_data_return	1	1	114	1	3
-37	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	115	1	2
-38	__constVal96	2	0	116	1	1
-39	__constVal100	2	0	117	1	1
-40	__RotateRobot_return	1	1	118	1	5
-41	__PFTmp	1	1	119	1	1
-42	__rotate_theRVP3	1	1	120	1	2
-43	__rotate_theRVI3	1	1	121	1	2
-44	__rotate_theRM3	1	1	122	1	4
-45	__rotate_theRS3	1	1	123	1	3
-46	__rotate_thePower3	2	1	124	1	4
-47	__rotate_theTurnPct3	2	1	125	1	4
-48	__rotate_theRVD3	1	1	126	1	2
-49	__rotate_rs3	1	1	127	1	2
-50	__rotate_firstPort3	1	1	128	1	5
-51	__rotate_sync3	1	1	129	1	2
-52	__constValNeg1	2	0	130	1	1
-53	__rotate_power3	1	1	131	1	4
-54	__rotate_theUF3	1	1	132	1	6
-55	__rotate_theOM3	1	1	133	1	7
-56	__rotate_stop3	1	1	134	1	2
-57	__rotate_turnpct3	2	1	135	1	3
-58	__constVal32	2	0	136	1	4
-59	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	137	1	2
-60	__LSWriteOptions1	1	1	138	1	1
-61	____ResetSensorSubroutine_return	1	1	139	1	3
-62	__RLSBResult1	2	1	140	1	7
-63	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	141	1	2
-64	____ReadLSBytes1_return	1	1	142	1	3
-65	__ResetSensorTmp	1	1	143	1	2
-66	__constVal50	2	0	144	1	1
-67	____RotateMotor3_return	1	1	145	1	3
-68	__constVal1	2	0	146	1	10
-69	__constVal0	2	1	147	1	15
-70	____RotateMotor3_sign_tmp	2	1	148	1	4
-71	__ResetSensorPort	1	1	149	1	3
-72	__CLSCSArgs1	8	0	3	4	4
-73	__CLSCSArgs1.Result	2	1	152	1	4
-74	__CLSCSArgs1.Port	1	1	153	1	4
-75	__CLSCSArgs1.BytesReady	1	1	154	1	4
-76	__CLSRArgs1	8	0	4	12	5
-77	__CLSRArgs1.Result	2	1	156	1	5
-78	__CLSRArgs1.Port	1	1	157	1	5
-79	__CLSRArgs1.Buffer	7	0	158	4	5
-80	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
-81	__CLSRArgs1.BufferLen	1	1	160	1	5
-82	__CLSWArgs1	8	0	4	12	5
-83	__CLSWArgs1.Result	2	1	164	1	5
-84	__CLSWArgs1.Port	1	1	165	1	5
-85	__CLSWArgs1.Buffer	7	0	166	4	5
-86	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
-87	__CLSWArgs1.ReturnLen	1	1	168	1	5
-88	__RLSBbufLSWrite1	7	0	170	4	1
-89	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-90	__rotate_ports3	7	0	172	4	6
-91	__rotate_ports3.__rotate_ports3_type	1	0	0	1	0
-92	__OUT_AB	7	0	174	4	1
-93	__OUT_AB.__OUT_AB_type	1	0	0	1	0
-94	__main_7qG2_points_7qG2_000	7	0	176	4	6
-95	__main_7qG2_points_7qG2_000.__main_7qG2_points_7qG2_000_type	10	0	0	4	0
-96	__RLSReadBuf1	7	0	178	4	8
-97	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
-98	__RLSLastGoodRead1	7	0	180	4	2
-99	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+17	__RotateRobot_7qG2_directionFactor_7qG2_000	10	1	68	4	4
+18	__D0RotateRobot	6	1	72	4	10
+19	__constValNeg360	4	0	76	2	1
+20	__rotate_OldRotCount3	4	1	78	2	2
+21	__rotate_RotCount3	4	1	80	2	4
+22	__PFTmp	1	1	82	1	1
+23	__constVal96	2	0	83	1	1
+24	____initialize_global_data_return	1	1	84	1	3
+25	__RotateRobot_return	1	1	85	1	4
+26	__constValNeg1	2	0	86	1	1
+27	__rotate_theOM3	1	1	87	1	7
+28	__rotate_theUF3	1	1	88	1	6
+29	__rotate_theRM3	1	1	89	1	4
+30	__rotate_theRVP3	1	1	90	1	2
+31	__rotate_theRS3	1	1	91	1	3
+32	__rotate_firstPort3	1	1	92	1	5
+33	__rotate_power3	1	1	93	1	4
+34	__rotate_sync3	1	1	94	1	2
+35	__rotate_turnpct3	2	1	95	1	3
+36	__rotate_stop3	1	1	96	1	2
+37	__rotate_theRVI3	1	1	97	1	2
+38	__constVal0	2	1	98	1	15
+39	__constVal1	2	0	99	1	5
+40	__constVal50	2	0	100	1	1
+41	____RotateMotor3_sign_tmp	2	1	101	1	4
+42	____RotateMotor3_return	1	1	102	1	3
+43	__rotate_rs3	1	1	103	1	2
+44	__rotate_theRVD3	1	1	104	1	2
+45	__rotate_thePower3	2	1	105	1	4
+46	__constVal32	2	0	106	1	4
+47	__rotate_theTurnPct3	2	1	107	1	4
+48	__OUT_AB	7	0	108	4	1
+49	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+50	__rotate_ports3	7	0	110	4	6
+51	__rotate_ports3.__rotate_ports3_type	1	0	0	1	0
+52	__main_7qG2_points_7qG2_000	7	0	112	4	1
+53	__main_7qG2_points_7qG2_000.__main_7qG2_points_7qG2_000_type	10	0	0	4	0
 #SOURCES
 Clump	Line	PC	Source
 0	4	0	#line 4 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
@@ -108,173 +62,30 @@ Clump	Line	PC	Source
 0	5	2	#line 5 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
 0	6	2		arrbuild __main_7qG2_points_7qG2_000, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0
 0	6	15	#line 6 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	7	15		mov __main_7qG2_closestPointDistance_7qG2_000, __constVal9999
-0	6	17	#line 6 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	19	17	#line 19 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	20	17		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 1
-0	19	20	#line 19 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	23	20	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	24	20		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
-0	4342	22	#line 4342 "NXCDefs.h"
-0	4343	22		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
-0	4342	24	#line 4342 "NXCDefs.h"
-0	4342	24	#line 4342 "NXCDefs.h"
-0	4343	24		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
-0	4342	26	#line 4342 "NXCDefs.h"
-0	4343	26		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
-0	4342	29	#line 4342 "NXCDefs.h"
-0	4343	29		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_main
-0	4342	32	#line 4342 "NXCDefs.h"
-0	4343	32		set __DU0SetSensorLowspeed_inline_main, 11
-0	4342	35	#line 4342 "NXCDefs.h"
-0	4342	35	#line 4342 "NXCDefs.h"
-0	4343	35		jmp __004__ASM_Label_37
-0	4342	37	#line 4342 "NXCDefs.h"
-0	4343	37		set __DU0SetSensorLowspeed_inline_main, 10
-0	4342	40	#line 4342 "NXCDefs.h"
-0	4342	40	#line 4342 "NXCDefs.h"
-0	4343	40		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
-0	4247	42	#line 4247 "NXCDefs.h"
-0	4248	42		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
-0	4247	46	#line 4247 "NXCDefs.h"
-0	4343	46	#line 4343 "NXCDefs.h"
-0	4343	46	#line 4343 "NXCDefs.h"
-0	4344	46		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
-0	4343	48	#line 4343 "NXCDefs.h"
-0	4343	48	#line 4343 "NXCDefs.h"
-0	4344	48		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
-0	4343	51	#line 4343 "NXCDefs.h"
-0	4260	51	#line 4260 "NXCDefs.h"
-0	4261	51		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
-0	4260	55	#line 4260 "NXCDefs.h"
-0	4344	55	#line 4344 "NXCDefs.h"
-0	4344	55	#line 4344 "NXCDefs.h"
-0	4344	55	#line 4344 "NXCDefs.h"
-0	4278	55	#line 4278 "NXCDefs.h"
-0	4279	55	#pragma macro 4
-0	4279	55		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
-0	4279	57		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	4088	59	#line 4088 "NXCDefs.h"
-0	4278	59	#line 4278 "NXCDefs.h"
-0	4345	59	#line 4345 "NXCDefs.h"
-0	23	59	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	23	59	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	24	59		set __main_7qG2_i_7qG2_001, 0
-0	23	62	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	23	62	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	24	62		mov __signed_stack_001main, __main_7qG2_i_7qG2_001
-0	23	64	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	23	64	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	24	64		set __D0main, 10
-0	23	67	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	24	67		cmp 0, __D0main, __signed_stack_001main, __D0main
-0	23	71	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	24	71		brtst 4, __ASM_Label_518, __D0main
-0	23	74	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	24	74		jmp __ASM_Label_519
-0	23	76	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	24	76		add __main_7qG2_i_7qG2_001, __main_7qG2_i_7qG2_001, __constVal1
-0	24	80	#line 24 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	25	80		jmp __ASM_Label_517
-0	24	82	#line 24 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	25	82		set __D0main, 500
-0	24	85	#line 24 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	25	85		mov __RotateRobot_7qG2_deg_7qG2_000, __D0main
-0	25	87	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	26	87		subcall RotateRobot, __RotateRobot_return
-0	25	89	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	25	89	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	26	89		mov __signed_stack_001main, __main_7qG2_i_7qG2_001
-0	25	91	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	25	91	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	26	91	#pragma macro 26
-0	26	91		acquire __RLSBmutex1
-0	26	92		mov __RLSReadBuf1, __RLSBbufLSWrite1
-0	26	94		set __RLSBytesCount1, 1
-0	26	97		wait2 NA, __constVal15
-0	26	100		subcall __ReadLSBytes1, ____ReadLSBytes1_return
-0	26	102		index __D0main, __RLSReadBuf1, 65535
-0	26	106		release __RLSBmutex1
-0	4138	107	#line 4138 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	25	107	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	26	107		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_001main, __D0main
-0	25	112	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	25	112	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	26	112	#line 26 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	27	112		mov __signed_stack_001main, __main_7qG2_i_7qG2_001
-0	26	114	#line 26 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	26	114	#line 26 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	27	114		index __float_stack_001main, __main_7qG2_points_7qG2_000, __signed_stack_001main
-0	26	118	#line 26 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	26	118	#line 26 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	26	118	#line 26 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	27	118		mov __DF0main, __main_7qG2_closestPointDistance_7qG2_000
-0	26	120	#line 26 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	27	120		cmp 0, __D0main, __float_stack_001main, __DF0main
-0	27	124	#line 27 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	28	124		brtst 4, __ASM_Label_535, __D0main
-0	27	127	#line 27 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	28	127		mov __signed_stack_001main, __main_7qG2_i_7qG2_001
-0	27	129	#line 27 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	27	129	#line 27 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	28	129		index __main_7qG2_closestPointDistance_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_001main
-0	27	133	#line 27 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	28	133	#line 28 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	28	133	#line 28 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	28	133	#line 28 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	29	133		set __signed_stack_001main, 360
-0	28	136	#line 28 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	28	136	#line 28 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	29	136		arrsize __DF0main, __main_7qG2_points_7qG2_000
-0	28	139	#line 28 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	29	139		div __float_stack_001main, __signed_stack_001main, __DF0main
-0	28	143	#line 28 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	29	143	#line 29 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	30	143		mov __D0main, __main_7qG2_i_7qG2_001
-0	29	145	#line 29 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	30	145		mul __main_7qG2_closestPointDegrees_7qG2_000, __float_stack_001main, __D0main
-0	29	149	#line 29 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	29	149	#line 29 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	29	149	#line 29 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	32	149	#line 32 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	32	149	#line 32 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	33	149		jmp __ASM_Label_520
-0	32	151	#line 32 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	32	151	#line 32 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	33	151		mov __float_stack_001main, __main_7qG2_closestPointDegrees_7qG2_000
-0	32	153	#line 32 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	33	153	#line 33 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	34	153		mov __DF0main, __constVal180
-0	33	155	#line 33 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	34	155		cmp 1, __D0main, __float_stack_001main, __DF0main
-0	33	159	#line 33 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	34	159		brtst 4, __ASM_Label_546, __D0main
-0	33	162	#line 33 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	34	162		mov __float_stack_001main, __main_7qG2_closestPointDegrees_7qG2_000
-0	33	164	#line 33 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	33	164	#line 33 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	34	164		mov __DF0main, __constVal180
-0	33	166	#line 33 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	34	166		sub __float_stack_001main, __float_stack_001main, __DF0main
-0	33	170	#line 33 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	33	170	#line 33 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	34	170		mov __DF0main, __constValNeg1
-0	33	172	#line 33 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	34	172		mul __RotateRobot_7qG2_deg_7qG2_000, __float_stack_001main, __DF0main
-0	33	176	#line 33 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	34	176	#line 34 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	35	176		subcall RotateRobot, __RotateRobot_return
-0	34	178	#line 34 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	35	178	#line 35 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	36	178		jmp __ASM_Label_551
-0	35	180	#line 35 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	36	180		mov __RotateRobot_7qG2_deg_7qG2_000, __main_7qG2_closestPointDegrees_7qG2_000
-0	35	182	#line 35 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	36	182	#line 36 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	37	182		subcall RotateRobot, __RotateRobot_return
-0	36	184	#line 36 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	36	184	#line 36 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	37	184		exit -1, -1
+0	6	15	#line 6 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	7	15	#line 7 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	7	15	#line 7 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	11	15	#line 11 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	12	15		set __D0main, 360
+0	11	18	#line 11 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	12	18		mov __RotateRobot_7qG2_deg_7qG2_000, __D0main
+0	12	20	#line 12 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	13	20		subcall RotateRobot, __RotateRobot_return
+0	12	22	#line 12 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	12	22	#line 12 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	13	22		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	12	25	#line 12 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	8551	25	#line 8551 "NXCDefs.h"
+0	8552	25		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	28	#line 8551 "NXCDefs.h"
+0	13	28	#line 13 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	13	28	#line 13 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	14	28		mov __RotateRobot_7qG2_deg_7qG2_000, __constValNeg360
+0	13	30	#line 13 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	43	30	#line 43 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	44	30		subcall RotateRobot, __RotateRobot_return
+0	43	32	#line 43 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	44	32		exit -1, -1
 1	5226	0		brtst 4, __rotate_Done3, __rotate_angle3
 1	5227	3		set ____RotateMotor3_sign_tmp, 0
 1	5227	6		brtst EQ, __sign_3, __rotate_angle3
@@ -316,117 +127,103 @@ Clump	Line	PC	Source
 1	5272	159		brtst 4, __rotate_Done3, __rotate_theTurnPct3
 1	5273	162		setout __rotate_ports3, 0, __constVal32
 1	5275	167		subret ____RotateMotor3_return
-2	5476	0		setin __constVal1, __ResetSensorPort, 5
-2	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
-2	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
-2	5480	11		subret ____ResetSensorSubroutine_return
-3	6319	0	#pragma macro 25
-3	6319	0		acquire __CLSWMutex1
-3	6319	1		or __CLSWArgs1.Port, __constVal1, __LSWriteOptions1
-3	6319	5		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
-3	6319	7		mov __CLSWArgs1.Buffer, __RLSReadBuf1
-3	6319	9		syscall 21, __CLSWArgs1
-3	6319	12		mov __RLSBResult1, __CLSWArgs1.Result
-3	6319	14		release __CLSWMutex1
-3	6319	15	#line 6319 "NXTDefs.h"
-3	6320	15		brtst 5, __RLSBError1, __RLSBResult1
-3	6321	18		set __RLSBIterations1, 60
-3	6323	21	#pragma macro 23
-3	6323	21		acquire __CLSCSMutex1
-3	6323	22		set __CLSCSArgs1.Port, 1
-3	6323	25		syscall 23, __CLSCSArgs1
-3	6323	28		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
-3	6323	30		mov __RLSBResult1, __CLSCSArgs1.Result
-3	6323	32		release __CLSCSMutex1
-3	6323	33	#line 6323 "NXTDefs.h"
-3	6324	33		sub __RLSBIterations1, __RLSBIterations1, __constVal1
-3	6325	37		brtst 2, __RLSBError1, __RLSBIterations1
-3	6326	40		brtst 0, __RLSBError1, __RLSBResult1
-3	6327	43		brtst 4, __RLSBReadyToRead1, __RLSBResult1
-3	6329	46		wait2 NA, __constVal1
-3	6330	49		jmp __RLSBDoCheckStatus1
-3	6332	51		brtst 4, __RLSBReturn1, __RLSBytesCount1
-3	6333	54		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
-3	6335	58	#pragma macro 25
-3	6335	58		acquire __CLSRMutex1
-3	6335	59		set __CLSRArgs1.Port, 1
-3	6335	62		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
-3	6335	64		syscall 22, __CLSRArgs1
-3	6335	67		mov __RLSReadBuf1, __CLSRArgs1.Buffer
-3	6335	69		mov __RLSBResult1, __CLSRArgs1.Result
-3	6335	71		release __CLSRMutex1
-3	6335	72	#line 6335 "NXTDefs.h"
-3	6336	72		brtst 5, __RLSBError1, __RLSBResult1
-3	6337	75		mov __RLSLastGoodRead1, __RLSReadBuf1
-3	6338	77		jmp __RLSBDone1
-3	6340	79		mov __RLSReadBuf1, __RLSLastGoodRead1
-3	6342	81		arrsize __RLSBytesCount1, __RLSReadBuf1
-3	6344	84		subret ____ReadLSBytes1_return
-4	6	0	#line 6 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	7	0		mov __RotateRobot_7qG2_wheelCir_7qG2_000, __constValf17P278756
-4	6	2	#line 6 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	8	2	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	9	2		mov __RotateRobot_7qG2_circleCir_7qG2_000, __constValf57P4911336
-4	8	4	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	8	4	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	8	4	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	8	4	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	8	4	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	8	4	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	8	4	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	9	4		mov __float_stack_002RotateRobot, __RotateRobot_7qG2_deg_7qG2_000
-4	8	6	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	8	6	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	8	6	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	8	6	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	8	6	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	9	6		div __float_stack_003RotateRobot, __RotateRobot_7qG2_wheelCir_7qG2_000, __RotateRobot_7qG2_circleCir_7qG2_000
-4	8	10	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	8	10	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	9	10		mov __DF0RotateRobot, __constVal360
-4	8	12	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	9	12		mul __DF0RotateRobot, __float_stack_003RotateRobot, __DF0RotateRobot
-4	8	16	#line 8 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	9	16		div __DF0RotateRobot, __float_stack_002RotateRobot, __DF0RotateRobot
-4	10	20	#line 10 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	10	20	#line 10 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	10	20	#line 10 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	11	20		set __signed_stack_001RotateRobot, 50
-4	10	23	#line 10 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	10	23	#line 10 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	11	23		mov __float_stack_002RotateRobot, __RotateRobot_7qG2_deg_7qG2_000
-4	10	25	#line 10 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	10	25	#line 10 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	11	25		mov __float_stack_003RotateRobot, __constVal100
-4	10	27	#line 10 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	10	27	#line 10 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	11	27		mov __float_stack_004RotateRobot, __constVal1
-4	10	29	#line 10 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	10	29	#line 10 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	11	29		mov __DF0RotateRobot, __constVal1
-4	11	31	#line 11 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	12	31	#pragma macro 35
-4	12	31		mov __rotate_ports3, __OUT_AB
-4	12	33		mov __rotate_power3, __signed_stack_001RotateRobot
-4	12	35		mov __rotate_angle3, __float_stack_002RotateRobot
-4	12	37		mov __rotate_turnpct3, __float_stack_003RotateRobot
-4	12	39		mov __rotate_sync3, __float_stack_004RotateRobot
-4	12	41		mov __rotate_stop3, __DF0RotateRobot
-4	12	43		mov __rotate_theRVP3, __constVal32
-4	12	45		mov __rotate_theRVI3, __constVal0
-4	12	47		mov __rotate_theRVD3, __constVal96
-4	12	49		subcall __RotateMotor3, ____RotateMotor3_return
-4	3966	51	#line 3966 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	11	51	#line 11 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	12	51	#line 12 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
-4	13	51		subret __RotateRobot_return
-5	39	0	#line 39 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-5	40	0		subret ____initialize_global_data_return
+2	11	0	#line 11 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	12	0		set __D0RotateRobot, 100
+2	11	3	#line 11 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	12	3		mov __RotateRobot_7qG2_turnFactor_7qG2_000, __D0RotateRobot
+2	12	5	#line 12 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	13	5		mov __RotateRobot_7qG2_wheelCir_7qG2_000, __constValf17P278756
+2	12	7	#line 12 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	14	7	#line 14 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	15	7		mov __RotateRobot_7qG2_circleCir_7qG2_000, __constValf57P4911336
+2	14	9	#line 14 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	15	9	#line 15 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	16	9		mov __RotateRobot_7qG2_directionFactor_7qG2_000, __constVal1
+2	15	11	#line 15 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	15	11	#line 15 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	16	11		mov __float_stack_001RotateRobot, __RotateRobot_7qG2_deg_7qG2_000
+2	15	13	#line 15 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	15	13	#line 15 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	16	13		mov __DF0RotateRobot, __constVal0
+2	15	15	#line 15 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	16	15		cmp 2, __D0RotateRobot, __float_stack_001RotateRobot, __DF0RotateRobot
+2	16	19	#line 16 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	17	19		brtst 4, __ASM_Label_499, __D0RotateRobot
+2	17	22	#line 17 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	18	22		mov __D0RotateRobot, __constValNeg1
+2	17	24	#line 17 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	18	24		mul __RotateRobot_7qG2_turnFactor_7qG2_000, __RotateRobot_7qG2_turnFactor_7qG2_000, __D0RotateRobot
+2	17	28	#line 17 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	17	28	#line 17 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	18	28		set __signed_stack_001RotateRobot, 360
+2	17	31	#line 17 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	17	31	#line 17 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	18	31		set __D0RotateRobot, 316
+2	17	34	#line 17 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	18	34		div __RotateRobot_7qG2_directionFactor_7qG2_000, __signed_stack_001RotateRobot, __D0RotateRobot
+2	18	38	#line 18 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	18	38	#line 18 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	20	38	#line 20 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	21	38		jmp __ASM_Label_508
+2	20	40	#line 20 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	21	40		set __signed_stack_001RotateRobot, 360
+2	20	43	#line 20 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	20	43	#line 20 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	21	43		set __D0RotateRobot, 315
+2	20	46	#line 20 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	21	46		div __RotateRobot_7qG2_directionFactor_7qG2_000, __signed_stack_001RotateRobot, __D0RotateRobot
+2	21	50	#line 21 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	21	50	#line 21 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	23	50	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	23	50	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	23	50	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	23	50	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	23	50	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	24	50		div __float_stack_001RotateRobot, __RotateRobot_7qG2_circleCir_7qG2_000, __RotateRobot_7qG2_wheelCir_7qG2_000
+2	23	54	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	23	54	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	23	54	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	24	54		mul __float_stack_001RotateRobot, __float_stack_001RotateRobot, __RotateRobot_7qG2_deg_7qG2_000
+2	23	58	#line 23 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	25	58	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	25	58	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	26	58		mul __RotateRobot_7qG2_rotateDegrees_7qG2_000, __float_stack_001RotateRobot, __RotateRobot_7qG2_directionFactor_7qG2_000
+2	25	62	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	25	62	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	26	62		set __signed_stack_001RotateRobot, 50
+2	25	65	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	25	65	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	26	65		mov __float_stack_002RotateRobot, __RotateRobot_7qG2_rotateDegrees_7qG2_000
+2	25	67	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	25	67	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	26	67		mov __float_stack_003RotateRobot, __RotateRobot_7qG2_turnFactor_7qG2_000
+2	25	69	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	25	69	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	26	69		mov __float_stack_004RotateRobot, __constVal1
+2	25	71	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	25	71	#line 25 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	26	71		mov __DF0RotateRobot, __constVal1
+2	26	73	#line 26 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	27	73	#pragma macro 35
+2	27	73		mov __rotate_ports3, __OUT_AB
+2	27	75		mov __rotate_power3, __signed_stack_001RotateRobot
+2	27	77		mov __rotate_angle3, __float_stack_002RotateRobot
+2	27	79		mov __rotate_turnpct3, __float_stack_003RotateRobot
+2	27	81		mov __rotate_sync3, __float_stack_004RotateRobot
+2	27	83		mov __rotate_stop3, __DF0RotateRobot
+2	27	85		mov __rotate_theRVP3, __constVal32
+2	27	87		mov __rotate_theRVI3, __constVal0
+2	27	89		mov __rotate_theRVD3, __constVal96
+2	27	91		subcall __RotateMotor3, ____RotateMotor3_return
+2	4018	93	#line 4018 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	26	93	#line 26 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	27	93	#line 27 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+2	28	93		subret __RotateRobot_return
+3	46	0	#line 46 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+3	47	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc
-1	__RotateMotor3	187	NXTDefs.h
-2	__ResetSensorSubroutine	356	NXTDefs.h
-3	__ReadLSBytes1	369	NXTDefs.h
-4	RotateRobot	455	C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc
-5	__initialize_global_data	508	C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc
+1	__RotateMotor3	35	NXTDefs.h
+2	RotateRobot	204	C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc
+3	__initialize_global_data	299	C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc

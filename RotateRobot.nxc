@@ -1,12 +1,27 @@
 #define WHEEL_RADIUS 2.75
 #define WHEEL_DISTANCE 18.3
+#define WHEEL_DIAMETER 5.5
+
+//Två variabler som kompenserar för att motorerna är ojämna.
+#define POSITIVE1080ROTATIONDIFFERENCE -135
+#define NEGATIVE1080ROTATIONDIFFERENCE -130
 
 sub RotateRobot(float deg)
 {
-     float wheelCir = 2 * WHEEL_RADIUS * 3.141592;
+     float turnFactor = 100;
+     float wheelCir = WHEEL_DIAMETER * 3.141592;
      float circleCir = WHEEL_DISTANCE * 3.141592;
 
-     float rotateDegrees = (wheelCir / circleCir) * (deg / ((wheelCir / circleCir) * 360));
+     float directionFactor = 1;
+     if(deg <= 0){
+            turnFactor *= -1;
+            directionFactor = (360 / (360 + NEGATIVE1080ROTATIONDIFFERENCE / 3));
+     }
+     else{
+          directionFactor = (360 / (360 + POSITIVE1080ROTATIONDIFFERENCE / 3));
+     }
+     
+     float rotateDegrees = (circleCir / wheelCir) * deg * directionFactor;
 
-     RotateMotorEx(OUT_AB, 50, deg, 100, true, true);
+     RotateMotorEx(OUT_AB, 50, rotateDegrees, turnFactor, true, true);
 }
