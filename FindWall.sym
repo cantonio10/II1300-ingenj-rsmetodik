@@ -1,5 +1,6 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
+<<<<<<< HEAD
 0	__RotateRobot_7qG2_deg_7qG2_000	10	1	0	4	4
 1	__float_stack_004RotateRobot	10	1	4	4	2
 2	__DF0RotateRobot	10	1	8	4	4
@@ -54,13 +55,119 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 51	__rotate_ports3.__rotate_ports3_type	1	0	0	1	0
 52	__main_7qG2_points_7qG2_000	7	0	112	4	1
 53	__main_7qG2_points_7qG2_000.__main_7qG2_points_7qG2_000_type	10	0	0	4	0
+=======
+0	__float_stack_002RotateRobot	10	1	0	4	2
+1	__float_stack_003RotateRobot	10	1	4	4	2
+2	__float_stack_001RotateRobot	10	1	8	4	8
+3	__float_stack_001main	10	1	12	4	2
+4	__signed_stack_001RotateRobot	6	1	16	4	2
+5	__constValf18P2212336	10	0	20	4	1
+6	__RotateRobot_7qG2_circleCir_7qG2_000	10	1	24	4	2
+7	__RotateRobot_7qG2_wheelCir_7qG2_000	10	1	28	4	2
+8	__float_stack_004RotateRobot	10	1	32	4	2
+9	__RotateRobot_7qG2_deg_7qG2_000	10	1	36	4	3
+10	__DF0RotateRobot	10	1	40	4	6
+11	__D0SetSensorLowspeed_inline_main	6	1	44	4	2
+12	__DF0main	10	1	48	4	2
+13	__D0main	6	1	52	4	16
+14	__RLSBmutex1	9	0	56	4	2
+15	__signed_stack_001main	6	1	60	4	14
+16	__CLSCSMutex1	9	0	64	4	2
+17	__CLSWMutex1	9	0	68	4	2
+18	__CLSRMutex1	9	0	72	4	2
+19	__DU0SetSensorLowspeed_inline_main	5	1	76	4	5
+20	__RotateRobot_7qG2_rotateDegrees_7qG2_000	10	1	80	4	2
+21	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	84	4	2
+22	__main_7qG2_closestPointDistance_7qG2_000	10	1	88	4	3
+23	__main_7qG2_closestPointDegrees_7qG2_000	10	1	92	4	2
+24	__constValf57P1769744	10	0	96	4	1
+25	__rotate_theAngle3	5	1	100	4	2
+26	__rotate_angle3	6	1	104	4	5
+27	__main_7qG2_i_7qG2_001	4	1	108	2	8
+28	__constVal9999	4	0	110	2	1
+29	__constVal360	4	0	112	2	2
+30	__rotate_OldRotCount3	4	1	114	2	2
+31	__rotate_RotCount3	4	1	116	2	4
+32	__main_7qG2_pointAmount_7qG2_000	4	1	118	2	4
+33	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	120	1	2
+34	__PFTmp	1	1	121	1	1
+35	__constVal100	2	0	122	1	1
+36	__constVal15	2	0	123	1	2
+37	____initialize_global_data_return	1	1	124	1	3
+38	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	125	1	4
+39	__RotateRobot_return	1	1	126	1	4
+40	__constVal96	2	0	127	1	1
+41	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	128	1	2
+42	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	129	1	2
+43	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	130	1	2
+44	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	131	1	2
+45	__constVal10	2	0	132	1	1
+46	__rotate_theRVD3	1	1	133	1	2
+47	__rotate_rs3	1	1	134	1	2
+48	__rotate_theRVP3	1	1	135	1	2
+49	__rotate_theRVI3	1	1	136	1	2
+50	__constVal32	2	0	137	1	4
+51	__constVal1	2	0	138	1	10
+52	__rotate_thePower3	2	1	139	1	4
+53	__rotate_theTurnPct3	2	1	140	1	4
+54	__rotate_theRS3	1	1	141	1	3
+55	__rotate_sync3	1	1	142	1	2
+56	__rotate_stop3	1	1	143	1	2
+57	__rotate_power3	1	1	144	1	4
+58	__rotate_firstPort3	1	1	145	1	5
+59	__rotate_theOM3	1	1	146	1	7
+60	__rotate_theRM3	1	1	147	1	4
+61	__rotate_turnpct3	2	1	148	1	3
+62	__rotate_theUF3	1	1	149	1	6
+63	__constVal0	2	1	150	1	16
+64	__RLSBytesCount1	1	1	151	1	7
+65	__RLSBIterations1	1	1	152	1	4
+66	__RLSBResult1	2	1	153	1	7
+67	__LSWriteOptions1	1	1	154	1	1
+68	____ReadLSBytes1_return	1	1	155	1	3
+69	____ResetSensorSubroutine_return	1	1	156	1	3
+70	____RotateMotor3_return	1	1	157	1	3
+71	__constVal50	2	0	158	1	1
+72	____RotateMotor3_sign_tmp	2	1	159	1	4
+73	__ResetSensorTmp	1	1	160	1	2
+74	__ResetSensorPort	1	1	161	1	3
+75	__CLSWArgs1	8	0	4	12	5
+76	__CLSWArgs1.Result	2	1	164	1	5
+77	__CLSWArgs1.Port	1	1	165	1	5
+78	__CLSWArgs1.Buffer	7	0	166	4	5
+79	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+80	__CLSWArgs1.ReturnLen	1	1	168	1	5
+81	__CLSRArgs1	8	0	4	12	5
+82	__CLSRArgs1.Result	2	1	172	1	5
+83	__CLSRArgs1.Port	1	1	173	1	5
+84	__CLSRArgs1.Buffer	7	0	174	4	5
+85	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+86	__CLSRArgs1.BufferLen	1	1	176	1	5
+87	__CLSCSArgs1	8	0	3	4	4
+88	__CLSCSArgs1.Result	2	1	180	1	4
+89	__CLSCSArgs1.Port	1	1	181	1	4
+90	__CLSCSArgs1.BytesReady	1	1	182	1	4
+91	__rotate_ports3	7	0	184	4	6
+92	__rotate_ports3.__rotate_ports3_type	1	0	0	1	0
+93	__OUT_AB	7	0	186	4	1
+94	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+95	__RLSReadBuf1	7	0	188	4	8
+96	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+97	__RLSBbufLSWrite1	7	0	190	4	1
+98	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+99	__RLSLastGoodRead1	7	0	192	4	2
+100	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+101	__main_7qG2_points_7qG2_000	7	0	194	4	5
+102	__main_7qG2_points_7qG2_000.__main_7qG2_points_7qG2_000_type	10	0	0	4	0
+>>>>>>> 67bb8e39f5d50ccddad6a32ca3ab09e66394a43d
 #SOURCES
 Clump	Line	PC	Source
-0	4	0	#line 4 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	4	0	#line 4 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
 0	5	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	4	2	#line 4 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
-0	5	2	#line 5 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	4	2	#line 4 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	5	2	#line 5 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
 0	6	2		arrbuild __main_7qG2_points_7qG2_000, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0, __constVal0
+<<<<<<< HEAD
 0	6	15	#line 6 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
 0	6	15	#line 6 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
 0	7	15	#line 7 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
@@ -86,6 +193,165 @@ Clump	Line	PC	Source
 0	44	30		subcall RotateRobot, __RotateRobot_return
 0	43	32	#line 43 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
 0	44	32		exit -1, -1
+=======
+0	6	15	#line 6 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	7	15		mov __main_7qG2_pointAmount_7qG2_000, __constVal10
+0	6	17	#line 6 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	7	17	#line 7 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	8	17		mov __main_7qG2_closestPointDistance_7qG2_000, __constVal9999
+0	7	19	#line 7 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	18	19	#line 18 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	19	19		mov __main_7qG2_closestPointDegrees_7qG2_000, __constVal0
+0	18	21	#line 18 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	18	21	#line 18 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	19	21		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 1
+0	18	24	#line 18 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	22	24	#line 22 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	23	24		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	4342	26	#line 4342 "NXCDefs.h"
+0	4343	26		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4342	28	#line 4342 "NXCDefs.h"
+0	4342	28	#line 4342 "NXCDefs.h"
+0	4343	28		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	4342	30	#line 4342 "NXCDefs.h"
+0	4343	30		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4342	33	#line 4342 "NXCDefs.h"
+0	4343	33		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_main
+0	4342	36	#line 4342 "NXCDefs.h"
+0	4343	36		set __DU0SetSensorLowspeed_inline_main, 11
+0	4342	39	#line 4342 "NXCDefs.h"
+0	4342	39	#line 4342 "NXCDefs.h"
+0	4343	39		jmp __004__ASM_Label_37
+0	4342	41	#line 4342 "NXCDefs.h"
+0	4343	41		set __DU0SetSensorLowspeed_inline_main, 10
+0	4342	44	#line 4342 "NXCDefs.h"
+0	4342	44	#line 4342 "NXCDefs.h"
+0	4343	44		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4247	46	#line 4247 "NXCDefs.h"
+0	4248	46		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4247	50	#line 4247 "NXCDefs.h"
+0	4343	50	#line 4343 "NXCDefs.h"
+0	4343	50	#line 4343 "NXCDefs.h"
+0	4344	50		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4343	52	#line 4343 "NXCDefs.h"
+0	4343	52	#line 4343 "NXCDefs.h"
+0	4344	52		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4343	55	#line 4343 "NXCDefs.h"
+0	4260	55	#line 4260 "NXCDefs.h"
+0	4261	55		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	4260	59	#line 4260 "NXCDefs.h"
+0	4344	59	#line 4344 "NXCDefs.h"
+0	4344	59	#line 4344 "NXCDefs.h"
+0	4344	59	#line 4344 "NXCDefs.h"
+0	4278	59	#line 4278 "NXCDefs.h"
+0	4279	59	#pragma macro 4
+0	4279	59		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4279	61		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4138	63	#line 4138 "NXCDefs.h"
+0	4278	63	#line 4278 "NXCDefs.h"
+0	4345	63	#line 4345 "NXCDefs.h"
+0	22	63	#line 22 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	22	63	#line 22 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	23	63		set __main_7qG2_i_7qG2_001, 0
+0	22	66	#line 22 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	22	66	#line 22 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	23	66		mov __signed_stack_001main, __main_7qG2_i_7qG2_001
+0	22	68	#line 22 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	22	68	#line 22 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	23	68		mov __D0main, __main_7qG2_pointAmount_7qG2_000
+0	22	70	#line 22 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	23	70		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	22	74	#line 22 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	23	74		brtst 4, __ASM_Label_520, __D0main
+0	22	77	#line 22 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	23	77		jmp __ASM_Label_521
+0	22	79	#line 22 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	23	79		add __main_7qG2_i_7qG2_001, __main_7qG2_i_7qG2_001, __constVal1
+0	23	83	#line 23 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	24	83		jmp __ASM_Label_519
+0	23	85	#line 23 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	24	85		set __signed_stack_001main, 360
+0	23	88	#line 23 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	23	88	#line 23 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	24	88		mov __D0main, __main_7qG2_pointAmount_7qG2_000
+0	23	90	#line 23 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	24	90		div __RotateRobot_7qG2_deg_7qG2_000, __signed_stack_001main, __D0main
+0	23	94	#line 23 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	24	94	#line 24 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	25	94		subcall RotateRobot, __RotateRobot_return
+0	24	96	#line 24 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	24	96	#line 24 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	25	96		mov __signed_stack_001main, __main_7qG2_i_7qG2_001
+0	24	98	#line 24 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	24	98	#line 24 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	25	98	#pragma macro 26
+0	25	98		acquire __RLSBmutex1
+0	25	99		mov __RLSReadBuf1, __RLSBbufLSWrite1
+0	25	101		set __RLSBytesCount1, 1
+0	25	104		wait2 NA, __constVal15
+0	25	107		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+0	25	109		index __D0main, __RLSReadBuf1, 65535
+0	25	113		release __RLSBmutex1
+0	4198	114	#line 4198 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	24	114	#line 24 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	25	114		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_001main, __D0main
+0	24	119	#line 24 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	24	119	#line 24 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	26	119	#line 26 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	27	119		mov __signed_stack_001main, __main_7qG2_i_7qG2_001
+0	26	121	#line 26 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	26	121	#line 26 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	27	121		index __float_stack_001main, __main_7qG2_points_7qG2_000, __signed_stack_001main
+0	26	125	#line 26 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	26	125	#line 26 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	26	125	#line 26 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	27	125		mov __DF0main, __main_7qG2_closestPointDistance_7qG2_000
+0	26	127	#line 26 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	27	127		cmp 0, __D0main, __float_stack_001main, __DF0main
+0	27	131	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	28	131		brtst 4, __ASM_Label_537, __D0main
+0	27	134	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	28	134		mov __signed_stack_001main, __main_7qG2_i_7qG2_001
+0	27	136	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	27	136	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	28	136		index __main_7qG2_closestPointDistance_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_001main
+0	27	140	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	28	140	#line 28 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	28	140	#line 28 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	28	140	#line 28 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	29	140		set __signed_stack_001main, 360
+0	28	143	#line 28 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	28	143	#line 28 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	29	143		mov __D0main, __main_7qG2_pointAmount_7qG2_000
+0	28	145	#line 28 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	29	145		div __signed_stack_001main, __signed_stack_001main, __D0main
+0	28	149	#line 28 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	29	149	#line 29 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	30	149		mov __D0main, __main_7qG2_i_7qG2_001
+0	29	151	#line 29 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	30	151		mul __main_7qG2_closestPointDegrees_7qG2_000, __signed_stack_001main, __D0main
+0	29	155	#line 29 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	29	155	#line 29 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	31	155	#line 31 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	31	155	#line 31 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	32	155		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	31	158	#line 31 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	8551	158	#line 8551 "NXCDefs.h"
+0	8552	158		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	161	#line 8551 "NXCDefs.h"
+0	32	161	#line 32 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	41	161	#line 41 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	42	161		jmp __ASM_Label_522
+0	41	163	#line 41 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	41	163	#line 41 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	42	163		set __D0main, 360
+0	41	166	#line 41 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	42	166		mov __RotateRobot_7qG2_deg_7qG2_000, __D0main
+0	42	168	#line 42 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	43	168		subcall RotateRobot, __RotateRobot_return
+0	42	170	#line 42 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+0	43	170		exit -1, -1
+>>>>>>> 67bb8e39f5d50ccddad6a32ca3ab09e66394a43d
 1	5226	0		brtst 4, __rotate_Done3, __rotate_angle3
 1	5227	3		set ____RotateMotor3_sign_tmp, 0
 1	5227	6		brtst EQ, __sign_3, __rotate_angle3
@@ -127,6 +393,7 @@ Clump	Line	PC	Source
 1	5272	159		brtst 4, __rotate_Done3, __rotate_theTurnPct3
 1	5273	162		setout __rotate_ports3, 0, __constVal32
 1	5275	167		subret ____RotateMotor3_return
+<<<<<<< HEAD
 2	11	0	#line 11 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
 2	12	0		set __D0RotateRobot, 100
 2	11	3	#line 11 "C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
@@ -227,3 +494,118 @@ Clump	Name	Offset	File
 1	__RotateMotor3	35	NXTDefs.h
 2	RotateRobot	204	C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc
 3	__initialize_global_data	299	C:\Users\Kodama\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc
+=======
+2	5476	0		setin __constVal1, __ResetSensorPort, 5
+2	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+2	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+2	5480	11		subret ____ResetSensorSubroutine_return
+3	6319	0	#pragma macro 25
+3	6319	0		acquire __CLSWMutex1
+3	6319	1		or __CLSWArgs1.Port, __constVal1, __LSWriteOptions1
+3	6319	5		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+3	6319	7		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+3	6319	9		syscall 21, __CLSWArgs1
+3	6319	12		mov __RLSBResult1, __CLSWArgs1.Result
+3	6319	14		release __CLSWMutex1
+3	6319	15	#line 6319 "NXTDefs.h"
+3	6320	15		brtst 5, __RLSBError1, __RLSBResult1
+3	6321	18		set __RLSBIterations1, 60
+3	6323	21	#pragma macro 23
+3	6323	21		acquire __CLSCSMutex1
+3	6323	22		set __CLSCSArgs1.Port, 1
+3	6323	25		syscall 23, __CLSCSArgs1
+3	6323	28		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+3	6323	30		mov __RLSBResult1, __CLSCSArgs1.Result
+3	6323	32		release __CLSCSMutex1
+3	6323	33	#line 6323 "NXTDefs.h"
+3	6324	33		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+3	6325	37		brtst 2, __RLSBError1, __RLSBIterations1
+3	6326	40		brtst 0, __RLSBError1, __RLSBResult1
+3	6327	43		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+3	6329	46		wait2 NA, __constVal1
+3	6330	49		jmp __RLSBDoCheckStatus1
+3	6332	51		brtst 4, __RLSBReturn1, __RLSBytesCount1
+3	6333	54		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+3	6335	58	#pragma macro 25
+3	6335	58		acquire __CLSRMutex1
+3	6335	59		set __CLSRArgs1.Port, 1
+3	6335	62		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+3	6335	64		syscall 22, __CLSRArgs1
+3	6335	67		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+3	6335	69		mov __RLSBResult1, __CLSRArgs1.Result
+3	6335	71		release __CLSRMutex1
+3	6335	72	#line 6335 "NXTDefs.h"
+3	6336	72		brtst 5, __RLSBError1, __RLSBResult1
+3	6337	75		mov __RLSLastGoodRead1, __RLSReadBuf1
+3	6338	77		jmp __RLSBDone1
+3	6340	79		mov __RLSReadBuf1, __RLSLastGoodRead1
+3	6342	81		arrsize __RLSBytesCount1, __RLSReadBuf1
+3	6344	84		subret ____ReadLSBytes1_return
+4	7	0	#line 7 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	8	0		mov __RotateRobot_7qG2_wheelCir_7qG2_000, __constValf18P2212336
+4	7	2	#line 7 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	9	2	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	10	2		mov __RotateRobot_7qG2_circleCir_7qG2_000, __constValf57P1769744
+4	9	4	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	9	4	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	10	4		mov __float_stack_001RotateRobot, __RotateRobot_7qG2_deg_7qG2_000
+4	9	6	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	9	6	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	10	6		mov __DF0RotateRobot, __constVal360
+4	9	8	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	10	8		div __float_stack_001RotateRobot, __float_stack_001RotateRobot, __DF0RotateRobot
+4	9	12	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	9	12	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	9	12	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	10	12		mul __float_stack_001RotateRobot, __float_stack_001RotateRobot, __RotateRobot_7qG2_circleCir_7qG2_000
+4	9	16	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	9	16	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	9	16	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	10	16		div __float_stack_001RotateRobot, __float_stack_001RotateRobot, __RotateRobot_7qG2_wheelCir_7qG2_000
+4	9	20	#line 9 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	11	20	#line 11 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	12	20		mov __DF0RotateRobot, __constVal360
+4	11	22	#line 11 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	12	22		mul __RotateRobot_7qG2_rotateDegrees_7qG2_000, __float_stack_001RotateRobot, __DF0RotateRobot
+4	11	26	#line 11 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	11	26	#line 11 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	12	26		set __signed_stack_001RotateRobot, 50
+4	11	29	#line 11 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	11	29	#line 11 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	12	29		mov __float_stack_002RotateRobot, __RotateRobot_7qG2_rotateDegrees_7qG2_000
+4	11	31	#line 11 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	11	31	#line 11 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	12	31		mov __float_stack_003RotateRobot, __constVal100
+4	11	33	#line 11 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	11	33	#line 11 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	12	33		mov __float_stack_004RotateRobot, __constVal1
+4	11	35	#line 11 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	11	35	#line 11 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	12	35		mov __DF0RotateRobot, __constVal1
+4	12	37	#line 12 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	13	37	#pragma macro 35
+4	13	37		mov __rotate_ports3, __OUT_AB
+4	13	39		mov __rotate_power3, __signed_stack_001RotateRobot
+4	13	41		mov __rotate_angle3, __float_stack_002RotateRobot
+4	13	43		mov __rotate_turnpct3, __float_stack_003RotateRobot
+4	13	45		mov __rotate_sync3, __float_stack_004RotateRobot
+4	13	47		mov __rotate_stop3, __DF0RotateRobot
+4	13	49		mov __rotate_theRVP3, __constVal32
+4	13	51		mov __rotate_theRVI3, __constVal0
+4	13	53		mov __rotate_theRVD3, __constVal96
+4	13	55		subcall __RotateMotor3, ____RotateMotor3_return
+4	4004	57	#line 4004 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	12	57	#line 12 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	13	57	#line 13 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc"
+4	14	57		subret __RotateRobot_return
+5	45	0	#line 45 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc"
+5	46	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc
+1	__RotateMotor3	173	NXTDefs.h
+2	__ResetSensorSubroutine	342	NXTDefs.h
+3	__ReadLSBytes1	355	NXTDefs.h
+4	RotateRobot	441	C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\.\RotateRobot.nxc
+5	__initialize_global_data	500	C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\FindWall.nxc
+>>>>>>> 67bb8e39f5d50ccddad6a32ca3ab09e66394a43d
