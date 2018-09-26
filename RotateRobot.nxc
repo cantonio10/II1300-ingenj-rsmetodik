@@ -1,9 +1,9 @@
-#define WHEEL_RADIUS 2.75
-<<<<<<< HEAD
-#define WHEEL_DISTANCE 18.3
-#define WHEEL_DIAMETER 5.5
+#include "Constants.nxc"
 
-//Tv� variabler som kompenserar f�r att motorerna �r oj�mna.
+//Tv� variabler som kompenserar f�r att motorerna �r oj�mna.
+//Få roboten att rotera 1080 grader med hjälp av "RotateRobot(1080)" när "directionFactor" = 1.
+//Sedan med ögonmått eller på något annat sätt räkna ut hur många grader som diffar. T.ex att roboten åker 60 grader för kort
+//Då så skriv in -60 på en av de två variablerna precis här under, beroende på om vinkeln roboten skulle åka var positiv eller negativ.
 #define POSITIVE1080ROTATIONDIFFERENCE -135
 #define NEGATIVE1080ROTATIONDIFFERENCE -130
 
@@ -16,26 +16,13 @@ sub RotateRobot(float deg)
      float directionFactor = 1;
      if(deg <= 0){
             turnFactor *= -1;
-            directionFactor = (360 / (360 + NEGATIVE1080ROTATIONDIFFERENCE / 3));
+            directionFactor = (360 / (360 + (NEGATIVE1080ROTATIONDIFFERENCE / 3)));
      }
      else{
-          directionFactor = (360 / (360 + POSITIVE1080ROTATIONDIFFERENCE / 3));
+          directionFactor = (360 / (360 + (POSITIVE1080ROTATIONDIFFERENCE / 3)));
      }
-     
+
      float rotateDegrees = (circleCir / wheelCir) * deg * directionFactor;
 
-     RotateMotorEx(OUT_AB, 50, rotateDegrees, turnFactor, true, true);
-=======
-#define WHEEL_DIAMETER 5.8
-#define WHEEL_DISTANCE 18.2
-
-sub RotateRobot(float deg)
-{
-     float wheelCir = WHEEL_DIAMETER * 3.141592;
-     float circleCir = WHEEL_DISTANCE * 3.141592;
-
-     float rotateDegrees = (((deg / 360) * circleCir) / wheelCir) * 360;
-
-     RotateMotorEx(OUT_AB, 50, rotateDegrees, 100, true, true);
->>>>>>> 67bb8e39f5d50ccddad6a32ca3ab09e66394a43d
+     RotateMotorEx(WHEEL_MOTORS, 50, rotateDegrees, turnFactor, true, true);
 }

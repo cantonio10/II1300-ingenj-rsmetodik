@@ -1,6 +1,19 @@
 #include "RotateRobot.nxc"
 #include "FindWall.nxc"
+#include "DriveUntilWall.nxc"
+#include "DriveForward.nxc"
+#include "ThirdMotor.nxc"
 
 task main(){
      FindWall();
+     DriveUntilWall(30); //Drive until 30cm from wall OBS: jag vet inte om det mäts i cm, så 30 kan vara helt fel.
+     RotateRobot(90);
+     RotateUS(0); //Rotate US -90 degrees (or 0 if its already facing the correct direction)
+     DriveForward(250);//Drive 250cm while US checks distance from wall
+     //If US check distance är 30cm +-5 eller så: korrigera rotation.
+     DropBook();
+     RotateRobot(180);
+     DriveForward(250);//Drive 250cm while US checks distance from wall
+     //If US check distance är 30cm +-5 eller så: korrigera rotation.
+     //Finished
 }

@@ -1,0 +1,38 @@
+/*
+Script för tredje motorn.
+Här han saker som ultraljud sensor scannen skrivas in.
+Samt bok tippnings mekaniken.
+*/
+#include "Constants.nxc"
+
+//Gets the start rotation from COnstants.nxc file
+float currentRotation = USSR;
+//Rotate UltraSonic
+sub RotateUS(float deg)
+{
+  if(currentRotation + deg >= 180){
+    //Ex: current rotation = 150, deg = 50 så får man att den bara ska rotera 30 grader, så att den inte roterar för långt.
+    deg = 180 - currentRotation;
+  }
+  else if(currentRotation + deg <= 0){
+    //Ex: currentRotation = 50, deg = -90 så får man ut -40, så att man inte roterar för långt.
+    deg = deg + currentRotation;
+  }
+
+  int turnFactor = 100;
+  //Om graderna som ska roteras är negativa, invertera då rotationen genom att invertera "turnFactor"
+  if(deg < 0){
+    turnFactor *= -1;
+  }
+  currentRotation += deg;
+  RotateMotorEx(THIRD_MOTOR, 50, (deg / 2), turnFactor, true, true);
+}
+
+sub DropBook(){
+  float rotateAmount = 180 - (currentRotation / 2);
+  //Tippar av boken
+  RotateMotorEx(THIRD_MOTOR, 50, rotateAmount, 100, true, true);
+  Wait(1000);
+  //Återställer tillbaka sin rotation till vad den var innan tippningen
+  RotateMotorEx(THIRD_MOTOR, 50, rotateAmount, -100, true, true);
+}

@@ -1,0 +1,12 @@
+#include "Constants.nxc"
+
+//Drives forward "dist" cm.
+sub DriveUntilWall(float dist){
+  SetSensorLowspeed(IN_2);
+
+  while(SensorUS(IN_2) >= dist){
+    OnFwd(WHEEL_MOTORS, 50);
+    Wait(100);
+  }
+  Off(WHEEL_MOTORS);
+}

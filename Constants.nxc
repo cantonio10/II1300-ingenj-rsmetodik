@@ -1,0 +1,10 @@
+#define WHEEL_RADIUS 2.75
+#define WHEEL_DISTANCE 18.2
+#define WHEEL_DIAMETER 5.8
+
+#define WHEEL_MOTORS "OUT_AB"
+#define THIRD_MOTOR "OUT_C"
+
+//0 = till vänster. 90 grader är rakt fram osv.
+//USSR = Ultra Sound Start Rotation
+#define USSR 0

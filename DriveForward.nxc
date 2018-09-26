@@ -1,0 +1,7 @@
+#include "Constants.nxc"
+
+//Drives forward "dist" cm.
+sub DriveForward(float dist){
+  float turnDegrees = (dist / (WHEEL_DIAMETER * 3.141592)) * 360;
+  RotateMotorEx(WHEEL_MOTORS, 50, turnDegrees, 0, true, true);
+}
