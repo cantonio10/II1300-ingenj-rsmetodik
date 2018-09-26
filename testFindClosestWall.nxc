@@ -13,4 +13,12 @@ task main()
     Wait(500);
     closestDistance = SensorUS(IN_2);
   }
+
+  RotateMotorEx(OUT_BC, 50, 40.0, 50, true, true);
+
+
+  while(closestDistance > 30.0)
+  {
+    RotateMotorEx(OUT_BC, 50, 0.0, 0, true, true);
+  }
 }
