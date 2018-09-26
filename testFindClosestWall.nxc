@@ -1,0 +1,26 @@
+task main(){
+
+  float distanceToWall;
+  float currentDistance;
+  float closestDistance;
+  float newDistance;
+
+  SetSensorUltrasonic(IN_2);
+  distanceToWall = SensorUS(IN_2)
+
+  while(distanceToWall > 70.0)
+  {
+    RotateMotorEx(OUT_BC, 50, 20.0, -50, true, true)
+    Wait(500);
+    currentDistance = distanceToWall;
+    distanceToWall = SensorUS(IN_2)
+  }
+
+  while(currentDistance <= 69.9 && newDistance < distanceToWall)
+    {
+      newDistance = currentDistance;
+      RotateMotorEx(OUT_BC, 50, 20.0, -50, true, true);
+      distanceToWall = SensorUS(IN_2);
+      currentDistance = distanceToWall;
+    }
+}
