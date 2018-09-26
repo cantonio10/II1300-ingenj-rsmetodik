@@ -1,0 +1,38 @@
+task main()
+{
+
+  float initialDistance = 1.0;
+  float closestDistance = 0;
+  float Wdifference;
+
+  SetSensorUltrasonic(IN_2);
+
+  while(initialDistance >= closestDistance && 0 <= closestDistance < 150)
+  {
+    initialDistance = SensorUS(IN_2);
+    RotateMotorEx(OUT_BC, 50, 20.0, -50, true, true);
+    Wait(500);
+    closestDistance = SensorUS(IN_2);
+  }
+
+  Wait(500);
+  RotateMotorEx(OUT_BC, 50, 80.0, 100, true, true);
+  Wait(500);
+
+
+  while(closestDistance > 30.0)
+  {
+    RotateMotorEx(OUT_BC, 50, 50.0, 0, true, true);
+    closestDistance = SensorUS(IN_2);
+  }
+  
+  RotateMotorEx(OUT_BC, 50, 440, 50, true, true);
+  Wait(1000);
+  
+  RotateMotorEx(OUT_BC, 100, 5210, 0, true, true);
+  Off(OUT_BC);
+  Wait(1000);
+  
+  RotateMotorEx(OUT_BC, 50, 440, 50, true, true);
+  
+}
