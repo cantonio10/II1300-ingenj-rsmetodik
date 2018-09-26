@@ -17,8 +17,9 @@ task main()
   RotateMotorEx(OUT_BC, 50, 40.0, 50, true, true);
 
 
-  while(closestDistance > 30.0)
+  if(closestDistance > 30.0)
   {
-    RotateMotorEx(OUT_BC, 50, 0.0, 0, true, true);
+    float turnDegrees = (closestDistance-30.0 / (WHEEL_DIAMETER * 3.141592)) * 360;
+    RotateMotorEx(OUT_BC, 50, turnDegrees, 0, true, true);
   }
 }
