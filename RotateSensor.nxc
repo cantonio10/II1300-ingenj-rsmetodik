@@ -1,0 +1,6 @@
+#include "Constants.nxc"
+
+sub RotateSensor(float deg){
+
+  RotateMotor(THIRD_MOTOR,50,deg/2);
+}
