@@ -3,4 +3,5 @@
 sub RotateSensor(float deg){
 
   RotateMotor(THIRD_MOTOR,50,deg/2);
+  Wait(500);
 }
