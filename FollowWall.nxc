@@ -3,7 +3,7 @@ mutex moveMutex;
 task GoToDropOff()
 {
   Acquire(moveMutex);
-  while(SensorUS(IN_2) > 30)
+  while(true)
   {
     RotateMotorEx(OUT_BC, 30, 5210, 0, true, true);
     Release(moveMutex);
@@ -11,9 +11,7 @@ task GoToDropOff()
 }
 
 task FollowWall(){
-  SetSensorUltrasonic(IN_2)
-  float initialDistance;
-  float currentDistance;
+  SetSensorUltrasonic(IN_2);
 
   while(true){
     if(SensorUS(IN_2) > 30)
@@ -27,8 +25,9 @@ task FollowWall(){
       RotateMotorEx(OUT_BC, 30, 100, -50, true, true);
     }
   }
+}
 
 task main() {
-  Precedes(FollowWall, GoToDropOff)
-  SetSensorUltrasonic(IN_2)
+  Precedes(FollowWall, GoToDropOff);
+  SetSensorUltrasonic(IN_2);
 }
