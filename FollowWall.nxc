@@ -2,7 +2,8 @@
 SetSensorUltrasonic(IN_2);
 float distanceToWall = sensorUS(IN_2);
 
-task sensorScan(){
+task sensorScan()
+{
   while(true)
   {
 
@@ -18,7 +19,7 @@ task sensorScan(){
       OnFwdSync(OUT_BC, 60, -50)
     }
   }
-
+}
 
 task main()
 {
