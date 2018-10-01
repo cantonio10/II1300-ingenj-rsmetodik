@@ -1,0 +1,29 @@
+mutex moveMutex;
+
+task sensorScan(){
+  while(true){
+    if (SensorUS(IN_2) < 30) {
+      Acquire(moveMutex);
+      Off(OUT_BC);
+    }
+
+    SetSensorUltrasonic(IN_2);
+    SensorUS(IN_2);
+    Release(moveMutex);
+    }
+}
+
+task GoToWall(){
+  Acquire(moveMutex);
+
+  while(SensorUS(IN_2) > 30){
+    RotateMotorEx(OUT_BC, 30, 5210, 0, true, true);
+    Release(moveMutex);
+  }
+}
+
+task main()
+{
+  Precedes(GoToWall, sensorScan);
+  SetSensorUltrasonic(IN_2);
+}
