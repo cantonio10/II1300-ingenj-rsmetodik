@@ -29,14 +29,4 @@ Wait(1000);
     RotateMotorEx(OUT_BC, 30, 50.0, 0, true, true);
     distanceToWall = SensorUS(IN_2);
   }
-
-  RotateMotorEx(OUT_BC, 50, 440, 50, true, true); //vrid till vänster
-  Wait(1000);
-
-  RotateMotorEx(OUT_BC, 100, 5210, 0, true, true); //blastoff 2,5m
-  Off(OUT_BC);
-  Wait(1000);
-
-  RotateMotorEx(OUT_BC, 50, 440, 50, true, true); //rotera 90grader, stå riktad mot tvärs över korridoren.
-
 }
