@@ -7,7 +7,7 @@ sub sensorScan()
   while(true)
   {
   distanceToWall = SensorUS(IN_2);
-    if (distanceToWall < 30 && distanceToWall > 20)
+    if (distanceToWall < 30 && distanceToWall > 15)
     {
       OnFwdSync(OUT_BC, 80, 0);
     }
