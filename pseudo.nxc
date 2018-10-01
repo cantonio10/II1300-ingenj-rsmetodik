@@ -1,0 +1,26 @@
+
+FindWall();
+GoToWall();
+RotateRobot();
+RotateSensor(); (ThirdMotor)
+FollowWall(fram);
+DropBook();
+FollowWall(bak);
+
+
+
+FindWall();
+GoToWall();
+RotateRobot(-90);
+RotateSensor(90); (ThirdMotor)
+FollowWall(fram);
+RotateRobot(-90);
+RotateSensor(-90);
+GoToWall();
+DropBook(); (and backa)
+RotateRobot(180);
+GoToWall();
+RotateRobot(90);
+RotateSensor(-90);
+FollowWall();
+RotateSensor(90);
