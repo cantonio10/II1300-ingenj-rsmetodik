@@ -10,20 +10,22 @@ task sensorScan(){
     SetSensorUltrasonic(IN_2);
     SensorUS(IN_2);
     Release(moveMutex);
+    Yield();
     }
 }
 
-task GoToWall(){
+task movetoWall(){
   Acquire(moveMutex);
 
   while(SensorUS(IN_2) > 30){
     RotateMotorEx(OUT_BC, 30, 5210, 0, true, true);
     Release(moveMutex);
+    Yield();
   }
 }
 
-task main()
+sub GoToWall()
 {
-  Precedes(GoToWall, sensorScan);
+  Precedes(movetoWall, sensorScan);
   SetSensorUltrasonic(IN_2);
 }

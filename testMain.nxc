@@ -1,11 +1,40 @@
 #include "FindWall.nxc"
-#include "GoToWall.nxc"
+//#include "GoToWall.nxc"
 #include "ThirdMotor.nxc"
+
+mutex moveMutex;
+
+task sensorScan(){
+  while(true){
+    if (SensorUS(IN_2) < 30) {
+      Acquire(moveMutex);
+      Off(OUT_BC);
+    }
+
+    SetSensorUltrasonic(IN_2);
+    SensorUS(IN_2);
+    Release(moveMutex);
+    Yield();
+    }
+}
+
+task movetoWall(){
+  Acquire(moveMutex);
+
+  while(SensorUS(IN_2) > 30){
+    RotateMotorEx(OUT_BC, 30, 5210, 0, true, true);
+    Release(moveMutex);
+    Yield();
+  }
+}
 
 task main() {
   FindWall();
-  GoToWall();
-  RotateUS(90);
+  Precedes(movetoWall, sensorScan);
+  SetSensorUltrasonic(IN_2);
+  RotateUS(180);
+  RotateUS(-360);
+  DropBook();
   FindWall();
-  RotateMotorEx(0UT_BC, 70, 0, 0, true, true);
+  RotateMotorEx(OUT_BC, 70, 0, 0, true, true);
 }

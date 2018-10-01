@@ -1,0 +1,319 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_004main	6	1	0	4	2
+1	__signed_stack_003main	6	1	4	4	2
+2	__signed_stack_002main	6	1	8	4	2
+3	__signed_stack_004RotateUS	6	1	12	4	2
+4	__signed_stack_003RotateUS	6	1	16	4	2
+5	__signed_stack_001RotateUS	6	1	20	4	4
+6	__rotate_theAngle0	5	1	24	4	2
+7	__D0RotateUS	6	1	28	4	10
+8	__D0main	6	1	32	4	2
+9	__rotate_theAngle5	5	1	36	4	2
+10	__signed_stack_001main	6	1	40	4	2
+11	__DF0RotateUS	10	1	44	4	8
+12	__rotate_angle5	6	1	48	4	5
+13	__float_stack_001RotateUS	10	1	52	4	6
+14	__rotateMutex2	9	0	56	4	2
+15	__rotate_angle0	6	1	60	4	5
+16	__rotateMutex0	9	0	64	4	2
+17	__rotateMutex1	9	0	68	4	2
+18	__RotateUS_7qG2_deg_7qG2_000	10	1	72	4	9
+19	currentRotation	10	0	76	4	6
+20	__float_stack_002RotateUS	10	1	80	4	4
+21	__rotate_OldRotCount0	4	1	84	2	2
+22	__constVal180	4	0	86	2	1
+23	__rotate_OldRotCount5	4	1	88	2	2
+24	__rotate_RotCount5	4	1	90	2	4
+25	__RotateUS_7qG2_turnFactor_7qG2_000	4	1	92	2	4
+26	__rotate_RotCount0	4	1	94	2	4
+27	__constVal1	2	0	96	1	4
+28	__constVal0	2	1	97	1	11
+29	__constVal50	2	0	98	1	2
+30	____RotateMotor0_return	1	1	99	1	3
+31	____RotateMotor0_sign_tmp	2	1	100	1	4
+32	__constVal32	2	0	101	1	8
+33	__constValNeg90	2	0	102	1	1
+34	____RotateMotor5_return	1	1	103	1	3
+35	__constValNeg1	2	0	104	1	1
+36	____initialize_global_data_return	1	1	105	1	3
+37	__constVal96	2	0	106	1	2
+38	__RotateUS_return	1	1	107	1	3
+39	__constVal15	2	0	108	1	5
+40	__constVal2	2	0	109	1	1
+41	____RotateMotor5_sign_tmp	2	1	110	1	4
+42	__PFTmp	1	1	111	1	1
+43	__constVal100	2	0	112	1	1
+44	__rotate_theRVI0	1	1	113	1	2
+45	__rotate_theRVP0	1	1	114	1	2
+46	__rotate_theRS0	1	1	115	1	3
+47	__rotate_theRVD0	1	1	116	1	2
+48	__rotate_theTurnPct0	2	1	117	1	4
+49	__rotate_thePower0	2	1	118	1	4
+50	__rotate_rs0	1	1	119	1	2
+51	__rotate_theRM0	1	1	120	1	4
+52	__rotate_sync0	1	1	121	1	2
+53	__rotate_firstPort0	1	1	122	1	5
+54	__rotate_power0	1	1	123	1	4
+55	__rotate_stop0	1	1	124	1	2
+56	__rotate_theOM0	1	1	125	1	7
+57	__rotate_theUF0	1	1	126	1	6
+58	__rotate_turnpct0	2	1	127	1	3
+59	__rotate_power5	1	1	128	1	4
+60	__rotate_theRVI5	1	1	129	1	2
+61	__rotate_theRVP5	1	1	130	1	2
+62	__rotate_theRS5	1	1	131	1	3
+63	__rotate_theRVD5	1	1	132	1	2
+64	__rotate_theTurnPct5	2	1	133	1	4
+65	__rotate_thePower5	2	1	134	1	4
+66	__rotate_rs5	1	1	135	1	2
+67	__rotate_theRM5	1	1	136	1	4
+68	__rotate_stop5	1	1	137	1	2
+69	__rotate_sync5	1	1	138	1	2
+70	__rotate_firstPort5	1	1	139	1	5
+71	__rotate_theOM5	1	1	140	1	7
+72	__rotate_theUF5	1	1	141	1	6
+73	__rotate_turnpct5	2	1	142	1	3
+74	__OUT_BC	7	0	144	4	1
+75	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+76	__rotate_ports5	7	0	146	4	6
+77	__rotate_ports5.__rotate_ports5_type	1	0	0	1	0
+78	__rotate_ports0	7	0	148	4	6
+79	__rotate_ports0.__rotate_ports0_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	34	0	#line 34 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	35	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	34	2	#line 34 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	34	2	#line 34 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	35	2		mov __RotateUS_7qG2_deg_7qG2_000, __constValNeg90
+0	34	4	#line 34 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	36	4	#line 36 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	37	4		subcall RotateUS, __RotateUS_return
+0	36	6	#line 36 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	36	6	#line 36 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	37	6		set __signed_stack_001main, 70
+0	36	9	#line 36 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	36	9	#line 36 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	37	9		set __signed_stack_002main, 0
+0	36	12	#line 36 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	36	12	#line 36 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	37	12		set __signed_stack_003main, 0
+0	36	15	#line 36 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	36	15	#line 36 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	37	15		set __signed_stack_004main, 1
+0	36	18	#line 36 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	36	18	#line 36 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	37	18		set __D0main, 1
+0	37	21	#line 37 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	38	21	#pragma macro 35
+0	38	21		acquire __rotateMutex1
+0	38	22		acquire __rotateMutex2
+0	38	23		mov __rotate_ports5, __OUT_BC
+0	38	25		mov __rotate_power5, __signed_stack_001main
+0	38	27		mov __rotate_angle5, __signed_stack_002main
+0	38	29		mov __rotate_turnpct5, __signed_stack_003main
+0	38	31		mov __rotate_sync5, __signed_stack_004main
+0	38	33		mov __rotate_stop5, __D0main
+0	38	35		mov __rotate_theRVP5, __constVal32
+0	38	37		mov __rotate_theRVI5, __constVal0
+0	38	39		mov __rotate_theRVD5, __constVal96
+0	38	41		subcall __RotateMotor5, ____RotateMotor5_return
+0	38	43		release __rotateMutex2
+0	38	44		release __rotateMutex1
+0	5148	45	#line 5148 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	37	45	#line 37 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+0	38	45		exit -1, -1
+1	5067	0		brtst 4, __rotate_Done0, __rotate_angle0
+1	5068	3		set ____RotateMotor0_sign_tmp, 0
+1	5068	6		brtst EQ, __sign_0, __rotate_angle0
+1	5068	9		set ____RotateMotor0_sign_tmp, -1
+1	5068	12		brtst LT, __sign_0, __rotate_angle0
+1	5068	15		set ____RotateMotor0_sign_tmp, 1
+1	5068	18	__sign_0:	mov __rotate_thePower0, ____RotateMotor0_sign_tmp
+1	5069	20		abs __rotate_theAngle0, __rotate_angle0
+1	5070	23		mul __rotate_thePower0, __rotate_thePower0, __rotate_power0
+1	5072	27		set __rotate_theUF0, 23
+1	5073	30		brtst 4, __rotate_NoSync0, __rotate_sync0
+1	5074	33		set __rotate_theOM0, 7
+1	5075	36		set __rotate_theRM0, 2
+1	5076	39		mov __rotate_theTurnPct0, __rotate_turnpct0
+1	5077	41		brtst 4, __rotate_Start0, __rotate_theTurnPct0
+1	5078	44		add __rotate_theUF0, __rotate_theUF0, __constVal32
+1	5079	48		jmp __rotate_Start0
+1	5081	50		set __rotate_theOM0, 3
+1	5082	53		set __rotate_theRM0, 0
+1	5083	56		set __rotate_theTurnPct0, 0
+1	5085	59		set __rotate_theRS0, 32
+1	5086	62		setout __rotate_ports0, 1, __rotate_theOM0, 8, __rotate_theRM0, 5, __rotate_theAngle0, 6, __rotate_theRS0, 10, __rotate_theRVP0, 11, __rotate_theRVI0, 12, __rotate_theRVD0, 2, __rotate_thePower0, 7, __rotate_turnpct0, 0, __rotate_theUF0
+1	5089	85		index __rotate_firstPort0, __rotate_ports0, 65535
+1	5091	89		getout __rotate_power0, __rotate_firstPort0, 2
+1	5092	93		brtst 4, __rotate_doneRunning0, __rotate_power0
+1	5093	96		getout __rotate_rs0, __rotate_firstPort0, 6
+1	5094	100		brcmp 4, __rotate_Running0, __rotate_rs0, __constVal32
+1	5096	104		brtst 4, __rotate_Reset0, __rotate_stop0
+1	5098	107		set __rotate_theOM0, 7
+1	5099	110		set __rotate_theUF0, 7
+1	5100	113		setout __rotate_ports0, 1, __rotate_theOM0, 8, __constVal1, 6, __rotate_theRS0, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF0
+1	5102	128		getout __rotate_RotCount0, __rotate_firstPort0, 14
+1	5104	132		mov __rotate_OldRotCount0, __rotate_RotCount0
+1	5105	134		wait2 NA, __constVal50
+1	5107	137		getout __rotate_RotCount0, __rotate_firstPort0, 14
+1	5108	141		brcmp 5, __rotate_Stabilize0, __rotate_OldRotCount0, __rotate_RotCount0
+1	5109	145		set __rotate_theOM0, 4
+1	5110	148		setout __rotate_ports0, 8, __rotate_theRM0, 6, __constVal0, 1, __rotate_theOM0, 0, __constVal1
+1	5113	159		brtst 4, __rotate_Done0, __rotate_theTurnPct0
+1	5114	162		setout __rotate_ports0, 0, __constVal32
+1	5116	167		subret ____RotateMotor0_return
+2	5332	0		brtst 4, __rotate_Done5, __rotate_angle5
+2	5333	3		set ____RotateMotor5_sign_tmp, 0
+2	5333	6		brtst EQ, __sign_5, __rotate_angle5
+2	5333	9		set ____RotateMotor5_sign_tmp, -1
+2	5333	12		brtst LT, __sign_5, __rotate_angle5
+2	5333	15		set ____RotateMotor5_sign_tmp, 1
+2	5333	18	__sign_5:	mov __rotate_thePower5, ____RotateMotor5_sign_tmp
+2	5334	20		abs __rotate_theAngle5, __rotate_angle5
+2	5335	23		mul __rotate_thePower5, __rotate_thePower5, __rotate_power5
+2	5337	27		set __rotate_theUF5, 23
+2	5338	30		brtst 4, __rotate_NoSync5, __rotate_sync5
+2	5339	33		set __rotate_theOM5, 7
+2	5340	36		set __rotate_theRM5, 2
+2	5341	39		mov __rotate_theTurnPct5, __rotate_turnpct5
+2	5342	41		brtst 4, __rotate_Start5, __rotate_theTurnPct5
+2	5343	44		add __rotate_theUF5, __rotate_theUF5, __constVal32
+2	5344	48		jmp __rotate_Start5
+2	5346	50		set __rotate_theOM5, 3
+2	5347	53		set __rotate_theRM5, 0
+2	5348	56		set __rotate_theTurnPct5, 0
+2	5350	59		set __rotate_theRS5, 32
+2	5351	62		setout __rotate_ports5, 1, __rotate_theOM5, 8, __rotate_theRM5, 5, __rotate_theAngle5, 6, __rotate_theRS5, 10, __rotate_theRVP5, 11, __rotate_theRVI5, 12, __rotate_theRVD5, 2, __rotate_thePower5, 7, __rotate_turnpct5, 0, __rotate_theUF5
+2	5354	85		index __rotate_firstPort5, __rotate_ports5, 65535
+2	5356	89		getout __rotate_power5, __rotate_firstPort5, 2
+2	5357	93		brtst 4, __rotate_doneRunning5, __rotate_power5
+2	5358	96		getout __rotate_rs5, __rotate_firstPort5, 6
+2	5359	100		brcmp 4, __rotate_Running5, __rotate_rs5, __constVal32
+2	5361	104		brtst 4, __rotate_Reset5, __rotate_stop5
+2	5363	107		set __rotate_theOM5, 7
+2	5364	110		set __rotate_theUF5, 7
+2	5365	113		setout __rotate_ports5, 1, __rotate_theOM5, 8, __constVal1, 6, __rotate_theRS5, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF5
+2	5367	128		getout __rotate_RotCount5, __rotate_firstPort5, 14
+2	5369	132		mov __rotate_OldRotCount5, __rotate_RotCount5
+2	5370	134		wait2 NA, __constVal50
+2	5372	137		getout __rotate_RotCount5, __rotate_firstPort5, 14
+2	5373	141		brcmp 5, __rotate_Stabilize5, __rotate_OldRotCount5, __rotate_RotCount5
+2	5374	145		set __rotate_theOM5, 4
+2	5375	148		setout __rotate_ports5, 8, __rotate_theRM5, 6, __constVal0, 1, __rotate_theOM5, 0, __constVal1
+2	5378	159		brtst 4, __rotate_Done5, __rotate_theTurnPct5
+2	5379	162		setout __rotate_ports5, 0, __constVal32
+2	5381	167		subret ____RotateMotor5_return
+3	12	0	#line 12 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	12	0	#line 12 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	12	0	#line 12 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	12	0	#line 12 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	13	0		add __float_stack_001RotateUS, currentRotation, __RotateUS_7qG2_deg_7qG2_000
+3	12	4	#line 12 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	12	4	#line 12 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	13	4		mov __DF0RotateUS, __constVal180
+3	12	6	#line 12 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	13	6		cmp 3, __D0RotateUS, __float_stack_001RotateUS, __DF0RotateUS
+3	14	10	#line 14 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	15	10		brtst 4, __ASM_Label_548, __D0RotateUS
+3	14	13	#line 14 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	15	13		set __signed_stack_001RotateUS, 180
+3	14	16	#line 14 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	15	16	#line 15 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	15	16	#line 15 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	16	16		sub __RotateUS_7qG2_deg_7qG2_000, __signed_stack_001RotateUS, currentRotation
+3	15	20	#line 15 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	15	20	#line 15 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	16	20	#line 16 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	17	20		jmp __ASM_Label_551
+3	16	22	#line 16 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	16	22	#line 16 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	16	22	#line 16 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	16	22	#line 16 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	17	22		add __float_stack_001RotateUS, currentRotation, __RotateUS_7qG2_deg_7qG2_000
+3	16	26	#line 16 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	16	26	#line 16 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	17	26		mov __DF0RotateUS, __constVal0
+3	16	28	#line 16 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	17	28		cmp 2, __D0RotateUS, __float_stack_001RotateUS, __DF0RotateUS
+3	18	32	#line 18 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	19	32		brtst 4, __ASM_Label_554, __D0RotateUS
+3	18	35	#line 18 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	18	35	#line 18 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	19	35	#line 19 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	19	35	#line 19 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	20	35		add __RotateUS_7qG2_deg_7qG2_000, __RotateUS_7qG2_deg_7qG2_000, currentRotation
+3	19	39	#line 19 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	19	39	#line 19 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	21	39	#line 21 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	21	39	#line 21 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	23	39	#line 23 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	24	39		mov __RotateUS_7qG2_turnFactor_7qG2_000, __constVal100
+3	23	41	#line 23 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	23	41	#line 23 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	24	41		mov __float_stack_001RotateUS, __RotateUS_7qG2_deg_7qG2_000
+3	23	43	#line 23 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	23	43	#line 23 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	24	43		mov __DF0RotateUS, __constVal0
+3	23	45	#line 23 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	24	45		cmp 0, __D0RotateUS, __float_stack_001RotateUS, __DF0RotateUS
+3	24	49	#line 24 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	25	49		brtst 4, __ASM_Label_561, __D0RotateUS
+3	25	52	#line 25 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	26	52		mov __D0RotateUS, __constValNeg1
+3	25	54	#line 25 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	26	54		mul __RotateUS_7qG2_turnFactor_7qG2_000, __RotateUS_7qG2_turnFactor_7qG2_000, __D0RotateUS
+3	25	58	#line 25 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	26	58	#line 26 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	27	58	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	27	58	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	28	58		add currentRotation, currentRotation, __RotateUS_7qG2_deg_7qG2_000
+3	27	62	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	27	62	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	28	62		set __signed_stack_001RotateUS, 50
+3	27	65	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	27	65	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	28	65		mov __float_stack_002RotateUS, __RotateUS_7qG2_deg_7qG2_000
+3	27	67	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	27	67	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	28	67		mov __DF0RotateUS, __constVal2
+3	27	69	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	28	69		div __float_stack_002RotateUS, __float_stack_002RotateUS, __DF0RotateUS
+3	27	73	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	27	73	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	28	73		mov __signed_stack_003RotateUS, __RotateUS_7qG2_turnFactor_7qG2_000
+3	27	75	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	27	75	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	28	75		set __signed_stack_004RotateUS, 1
+3	27	78	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	27	78	#line 27 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	28	78		set __D0RotateUS, 1
+3	28	81	#line 28 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	29	81	#pragma macro 33
+3	29	81		acquire __rotateMutex0
+3	29	82		arrbuild __rotate_ports0, __constVal0
+3	29	86		mov __rotate_power0, __signed_stack_001RotateUS
+3	29	88		mov __rotate_angle0, __float_stack_002RotateUS
+3	29	90		mov __rotate_turnpct0, __signed_stack_003RotateUS
+3	29	92		mov __rotate_sync0, __signed_stack_004RotateUS
+3	29	94		mov __rotate_stop0, __D0RotateUS
+3	29	96		mov __rotate_theRVP0, __constVal32
+3	29	98		mov __rotate_theRVI0, __constVal0
+3	29	100		mov __rotate_theRVD0, __constVal96
+3	29	102		subcall __RotateMotor0, ____RotateMotor0_return
+3	29	104		release __rotateMutex0
+3	4780	105	#line 4780 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	28	105	#line 28 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	30	105	#line 30 "C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc"
+3	31	105		subret __RotateUS_return
+4	40	0	#line 40 "C:\Users\user\AppData\Local\Temp\temp.nxc"
+4	41	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\user\AppData\Local\Temp\temp.nxc
+1	__RotateMotor0	48	NXTDefs.h
+2	__RotateMotor5	217	NXTDefs.h
+3	RotateUS	386	C:\Users\user\Documents\GitHub\II1300-ingenjorsmetodik\ThirdMotor.nxc
+4	__initialize_global_data	493	C:\Users\user\AppData\Local\Temp\temp.nxc

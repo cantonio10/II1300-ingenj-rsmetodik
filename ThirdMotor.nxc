@@ -25,14 +25,16 @@ sub RotateUS(float deg)
     turnFactor *= -1;
   }
   currentRotation += deg;
-  RotateMotorEx(THIRD_MOTOR, 50, (deg / 2), turnFactor, true, true);
+  RotateMotor(THIRD_MOTOR, 50, deg / 1.5);
+  Wait(500);
 }
 
 sub DropBook(){
   float rotateAmount = 180 - (currentRotation / 2);
   //Tippar av boken
-  RotateMotorEx(THIRD_MOTOR, 50, rotateAmount, 100, true, true);
+  RotateMotor(THIRD_MOTOR, 65, rotateAmount);
   Wait(1000);
   //Återställer tillbaka sin rotation till vad den var innan tippningen
-  RotateMotorEx(THIRD_MOTOR, 50, rotateAmount, -100, true, true);
+  RotateMotor(THIRD_MOTOR, -65, rotateAmount-57);
+  Wait(500);
 }
