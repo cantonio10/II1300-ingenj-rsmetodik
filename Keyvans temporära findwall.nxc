@@ -11,22 +11,21 @@ task main() //lägg till argument close/far - 0/1, x = 1 gör att man hittar nä
   while(savedDistance >= distanceToWall && distanceToWall < 150) //rotera och skanna avstånd, stanna när nya avståndet är längre än senast sparade
   {
     savedDistance = SensorUS(IN_2); //spara värdet från sensor
-    RotateMotorEx(OUT_BC, 50, 20.0, -50, true, true); //rotera
+    RotateMotorEx(OUT_BC, 50, 20.0, -100, true, true); //rotera
     Wait(500);
     distanceToWall = SensorUS(IN_2); //skanna nya värdet efter rotation
   }
 
   Wait(500);
-  RotateMotorEx(OUT_BC, 50, 80.0, 100, true, true); //eftersom den överroterar under skannandet så roterar vi tillbaka lite
-  Wait(1000);
-
-if(x == 1){ //Ifall argumentet är 1 vänder den sig 180 grader efter att ha hittat närmaste vägg.
-RotateMotorEx(OUT_BC, 50, 660.0, 100, true, true);
-Wait(1000);
-}
-  while(distanceToWall > 30.0) //åk fram lite och skanna tills sensorn är 30cm ifrån väggen
+  until(savedDistance+1 < SensorUS(IN_2) < savedDistance+1)
   {
-    RotateMotorEx(OUT_BC, 30, 50.0, 0, true, true);
-    distanceToWall = SensorUS(IN_2);
+  RotateMotorEx(OUT_BC, 50, 20.0, 100, true, true); //eftersom den överroterar under skannandet så roterar vi tillbaka lite
+  Wait(500);
+  }
+
+  if(x == 1) //Ifall argumentet är 1 vänder den sig 180 grader efter att ha hittat närmaste vägg.
+  {
+  RotateMotorEx(OUT_BC, 50, 660.0, 100, true, true);
+  Wait(1000);
   }
 }
