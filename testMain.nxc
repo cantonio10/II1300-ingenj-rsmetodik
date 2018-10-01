@@ -1,3 +1,7 @@
+#include "FindWall.nxc"
+#include "GoToWall.nxc"
+#include "ThirdMotor.nxc"
+
 task main() {
   FindWall();
   GoToWall();
