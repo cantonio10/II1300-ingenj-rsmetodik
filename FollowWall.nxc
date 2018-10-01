@@ -1,26 +1,29 @@
 
-SetSensorUltrasonic(IN_2);
-float distanceToWall = sensorUS(IN_2);
+float distanceToWall;
 
-task sensorScan(){
+sub sensorScan()
+{
+  SetSensorUltrasonic(IN_2);
   while(true)
   {
-
-    if (distanceToWall < 25 && distanceToWall > 15)
+  distanceToWall = SensorUS(IN_2);
+    if (distanceToWall < 30 && distanceToWall > 20)
     {
-      OnFwdSync(OUT_BC, 60, 0)
+      OnFwdSync(OUT_BC, 80, 0);
     }
-    else if (distanceToWall > 25) {
-      OnFwdSync(OUT_BC, 60, 50)
+    if (distanceToWall > 25)
+    {
+      OnFwdSync(OUT_BC, 80, -10);
     }
     else
     {
-      OnFwdSync(OUT_BC, 60, -50)
+      OnFwdSync(OUT_BC, 80, 3);
     }
   }
-
+}
 
 task main()
 {
   sensorScan();
+  SetSensorUltrasonic(IN_2);
 }
