@@ -1,0 +1,11 @@
+#include "FindWall.nxc"
+#include "GoToWall.nxc"
+#include "ThirdMotor.nxc"
+
+task main() {
+  FindWall();
+  GoToWall();
+  RotateUS(90);
+  FindWall();
+  RotateMotorEx(0UT_BC, 70, 0, 0, true, true);
+}
