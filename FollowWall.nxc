@@ -1,3 +1,4 @@
+
 SetSensorUltrasonic(IN_2);
 float distanceToWall = sensorUS(IN_2);
 
@@ -21,6 +22,5 @@ task sensorScan(){
 
 task main()
 {
-  Precedes(GoToWall, sensorScan);
-  SetSensorUltrasonic(IN_2);
+  sensorScan();
 }
