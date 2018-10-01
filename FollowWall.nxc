@@ -1,33 +1,26 @@
-mutex moveMutex;
+SetSensorUltrasonic(IN_2);
+float distanceToWall = sensorUS(IN_2);
 
-task GoToDropOff()
-{
-  Acquire(moveMutex);
+task sensorScan(){
   while(true)
   {
-    RotateMotorEx(OUT_BC, 30, 5210, 0, true, true);
-    Release(moveMutex);
-  }
-}
 
-task FollowWall(){
-  SetSensorUltrasonic(IN_2);
-
-  while(true){
-    if(SensorUS(IN_2) > 30)
+    if (distanceToWall < 25 && distanceToWall > 15)
     {
-      Acquire(moveMutex);
-      RotateMotorEx(OUT_BC, 30, 100, 50, true, true);
+      OnFwdSync(OUT_BC, 60, 0)
+    }
+    else if (distanceToWall > 25) {
+      OnFwdSync(OUT_BC, 60, 50)
     }
     else
     {
-      Acquire(moveMutex);
-      RotateMotorEx(OUT_BC, 30, 100, -50, true, true);
+      OnFwdSync(OUT_BC, 60, -50)
     }
   }
-}
 
-task main() {
-  Precedes(FollowWall, GoToDropOff);
+
+task main()
+{
+  Precedes(GoToWall, sensorScan);
   SetSensorUltrasonic(IN_2);
 }
