@@ -1,8 +1,8 @@
 
 FindWall();
-GoToWall();
-RotateRobot();
-RotateSensor(); (ThirdMotor)
+GoToWall(); (skriv om så distans från vägg blir argument)
+RotateRobot(float degrees);
+RotateSensor(float degrees); (ThirdMotor)
 FollowWall(fram);
 DropBook();
 FollowWall(bak);
