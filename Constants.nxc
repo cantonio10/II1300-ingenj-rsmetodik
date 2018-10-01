@@ -7,4 +7,4 @@
 
 //0 = till vänster. 90 grader är rakt fram osv.
 //USSR = Ultra Sound Start Rotation
-#define USSR 0
+#define USSR 90
