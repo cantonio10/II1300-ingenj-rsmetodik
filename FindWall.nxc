@@ -14,6 +14,7 @@ sub FindWall()//lägg till argument close/far - 0/1, x = 1 gör att man hittar n
     RotateMotorEx(OUT_BC, 50, 20.0, -100, true, true); //rotera
     Wait(500);
     distanceToWall = SensorUS(IN_2); //skanna nya värdet efter rotation
+    Wait(500);
   }
 
   Wait(500);
