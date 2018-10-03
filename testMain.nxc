@@ -25,11 +25,12 @@ task movetoWall(){
     RotateMotorEx(OUT_BC, 30, 5210, 0, true, true);
     Release(moveMutex);
   }
-  RotateMotorEx(OUT_BC, 50, 440.0, 100, true, true);
+  RotateMotorEx(OUT_BC, 50, 140.0, 100, true, true);
   Wait(500);
   RotateUS(180);
   Wait(500);
   FindWall();
+
 }
 
 task main() {
