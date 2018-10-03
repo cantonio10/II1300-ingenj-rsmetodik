@@ -26,9 +26,3 @@ sub RotateRobot(float deg)
 
      RotateMotorEx(WHEEL_MOTORS, 50, rotateDegrees, turnFactor, true, true);
 }
-
-task main(){
-  RotateRobot(411);
-  Wait(1000);
-  RotateRobot(-360);
-}

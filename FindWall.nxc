@@ -1,4 +1,4 @@
-sub FindWall()//lägg till argument close/far - 0/1, x = 1 gör att man hittar närmaste vägg och vänder sig 180grader till motsatt vägg.
+sub FindWall(int overComp)//lägg till argument close/far - 0/1, x = 1 gör att man hittar närmaste vägg och vänder sig 180grader till motsatt vägg.
 {
   float savedDistance = 1.0;
   float distanceToWall = 0;
@@ -18,7 +18,9 @@ sub FindWall()//lägg till argument close/far - 0/1, x = 1 gör att man hittar n
   }
 
   Wait(500);
-  RotateMotorEx(OUT_BC, 50, 80.0, 100, true, true); //eftersom den överroterar under skannandet så roterar vi tillbaka lite
+  if(overComp == 1){
+    RotateMotorEx(OUT_BC, 50, 80.0, 100, true, true); //eftersom den överroterar under skannandet så roterar vi tillbaka lite
+  }
   Wait(500);
 
 

@@ -18,7 +18,7 @@ task movetoWall(){
   Acquire(moveMutex);
 
   while(SensorUS(IN_2) > 30){
-    RotateMotorEx(OUT_BC, 30, 5210, 0, true, true);
+    RotateMotorEx(OUT_BC, 40, 5210, 0, true, true);
     Release(moveMutex);
     Yield();
   }

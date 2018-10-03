@@ -1,0 +1,16 @@
+#include "Constants.nxc"
+#include "RotateRobot.nxc"
+
+sub AdjustAngle(int direction){ // if int = 1, direction is medsols. If direction = 0 then motsols.
+  SetSensorUltrasonic(IN_2);
+  if(direction == 0){
+    direction = -1;
+  }
+
+  if(SensorUS(IN_2) > 30){
+    RotateRobot(-ADJUST_DEGREES * direction);
+  }
+  else{
+    RotateRobot(ADJUST_DEGREES * direction);
+  }
+}
