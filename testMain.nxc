@@ -14,7 +14,7 @@ task sensorScan(){
     SetSensorUltrasonic(IN_2);
     SensorUS(IN_2);
     Release(moveMutex);
-    Yield();
+
     }
 }
 
@@ -24,17 +24,19 @@ task movetoWall(){
   while(SensorUS(IN_2) > 30){
     RotateMotorEx(OUT_BC, 30, 5210, 0, true, true);
     Release(moveMutex);
-    Yield();
   }
+  RotateMotorEx(OUT_BC, 50, 440.0, 100, true, true);
+  Wait(500);
+  RotateUS(180);
+  Wait(500);
+  FindWall();
 }
 
 task main() {
   FindWall();
   Precedes(movetoWall, sensorScan);
   SetSensorUltrasonic(IN_2);
-  RotateUS(180);
-  RotateUS(-360);
-  DropBook();
-  FindWall();
-  RotateMotorEx(OUT_BC, 70, 0, 0, true, true);
+  //DropBook();
+  //FindWall();
+  //RotateMotorEx(OUT_BC, 70, 0, 0, true, true);
 }
