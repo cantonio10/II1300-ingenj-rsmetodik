@@ -11,5 +11,4 @@
 //0 = till vänster. 90 grader är rakt fram osv.
 //USSR = Ultra Sound Start Rotation
 #define USSR 90
-
-int reverse = 1;
+#define reverse 1

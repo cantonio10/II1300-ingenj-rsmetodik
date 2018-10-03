@@ -1,5 +1,6 @@
 #include "FindWall.nxc"
 //#include "GoToWall.nxc"
+#include "Constants.nxc"
 #include "ThirdMotor.nxc"
 #include "DriveForward.nxc"
 #include "AdjustAngle.nxc"
@@ -28,25 +29,35 @@ task movetoWall(){
   Acquire(moveMutex);
 
   while(SensorUS(IN_2) > 40){
-    RotateMotorEx(OUT_BC, 30, 700, 0, true, true);
+    RotateMotorEx(OUT_BC, 30, 700 * reverse, 0, true, true);
     Release(moveMutex);
   }
   RotateUS(90);
   Wait(500);
-  RotateMotorEx(OUT_BC, 50, 400.0, 100, true, true);
+  RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
   Wait(500);
   FindWall(0);
 
   for(int i = 0; i < 250; i+= (250 / ADJUST_CYCLES)){
     DriveForward(250/ADJUST_CYCLES);
-    AdjustAngle(1);
+    if(reverse == 1){
+      AdjustAngle(1);
+    }
+    else{
+      AdjustAngle(0);
+    }
     Wait(100);
   }
-  RotateUS(-90);
+  RotateUS(-90 * reverse);
   DropBook();
   for(int i = 250; i > 0; i -= (250 / ADJUST_CYCLES)){
     DriveForward(-250 / ADJUST_CYCLES);
-    AdjustAngle(0);
+    if(reverse == 1){
+      AdjustAngle(0);
+    }
+    else{
+      AdjustAngle(1);
+    }
     Wait(100);
   }
 
