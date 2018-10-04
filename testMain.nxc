@@ -1,10 +1,12 @@
 #include "FindWall.nxc"
-//#include "GoToWall.nxc"
+#include "FollowWall.nxc"
 #include "Constants.nxc"
 #include "ThirdMotor.nxc"
-#include "DriveForward.nxc"
-#include "AdjustAngle.nxc"
+#include "MoveToWall.nxc"
+//#include "DriveForward.nxc"
 
+int reverse = 1;
+/*
 mutex moveMutex;
 
 task sensorScan(){
@@ -32,42 +34,59 @@ task movetoWall(){
     RotateMotorEx(OUT_BC, 30, 700 * reverse, 0, true, true);
     Release(moveMutex);
   }
+}
+*/
+
+sub DeliverCloseLeft(){
+  //Finds and goes to wall
+  FindWall(1, reverse);
+  MoveToWall(reverse);
+
+  //Rotates head and findswall again
   RotateUS(90);
   Wait(500);
   RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
   Wait(500);
-  FindWall(0);
+  FindWall(0, reverse);
 
-  for(int i = 0; i < 250; i+= (250 / ADJUST_CYCLES)){
-    DriveForward(250/ADJUST_CYCLES);
-    if(reverse == 1){
-      AdjustAngle(1);
-    }
-    else{
-      AdjustAngle(0);
-    }
-    Wait(100);
-  }
+  //Precedes(movetoWall, sensorScan);
+
+  FollowWall(RIGHT, 250);
   RotateUS(-90 * reverse);
   DropBook();
-  for(int i = 250; i > 0; i -= (250 / ADJUST_CYCLES)){
-    DriveForward(-250 / ADJUST_CYCLES);
-    if(reverse == 1){
-      AdjustAngle(0);
-    }
-    else{
-      AdjustAngle(1);
-    }
-    Wait(100);
-  }
+  FollowWall(RIGHT, -250);
+}
+sub DeliverCloseRight(){
+  reverse = -1;
+  //Finds and goes to wall
+  FindWall(1, reverse);
+  MoveToWall(reverse);
+
+  //Rotates head and findswall again
+  RotateUS(90);
+  Wait(500);
+  RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
+  Wait(500);
+  FindWall(0, reverse);
+
+  //Precedes(movetoWall, sensorScan);
+
+  FollowWall(RIGHT, 250);
+  RotateUS(-90 * reverse);
+  DropBook();
+  FollowWall(RIGHT, -250);
+}
+sub DeliverFarLeft(){
+
+}
+sub DeliverFarRight(){
 
 }
 
+
+
 task main() {
-  FindWall(1);
-  Precedes(movetoWall, sensorScan);
-  SetSensorUltrasonic(IN_2);
-  //DropBook();
-  //FindWall();
-  //RotateMotorEx(OUT_BC, 70, 0, 0, true, true);
+  DeliverCloseLeft();
+  //DeliverCloseRight();
+
 }

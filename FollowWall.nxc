@@ -1,29 +1,30 @@
+#include "Constants.nxc"
+#include "DriveForward.nxc"
+#include "AdjustAngle.nxc"
 
-float distanceToWall;
-
-sub sensorScan()
-{
-  SetSensorUltrasonic(IN_2);
-  while(true)
-  {
-  distanceToWall = SensorUS(IN_2);
-    if (distanceToWall < 30 && distanceToWall > 15)
-    {
-      OnFwdSync(OUT_BC, 80, 0);
-    }
-    if (distanceToWall > 25)
-    {
-      OnFwdSync(OUT_BC, 80, -10);
-    }
-    else
-    {
-      OnFwdSync(OUT_BC, 80, 3);
+sub FollowWall(int wallSide, int dist){
+  if(dist >= 0){ //If car moves forward
+    for(int i = 0; i < dist; i+= (dist / ADJUST_CYCLES)){
+      DriveForward(dist / ADJUST_CYCLES);
+      if(wallSide == 1){ //Follow right wall
+        AdjustAngle(1);
+      }
+      else{ //Follow left wal
+        AdjustAngle(0);
+      }
+      Wait(100);
     }
   }
-}
-
-task main()
-{
-  sensorScan();
-  SetSensorUltrasonic(IN_2);
+  else{ //If car moves backwards
+    for(int i = 0; i < dist; i+= (-dist / ADJUST_CYCLES)){
+      DriveForward(dist / ADJUST_CYCLES);
+      if(wallSide == 1){ //Follow right wall
+        AdjustAngle(0);
+      }
+      else{ //Follow left wal
+        AdjustAngle(1);
+      }
+      Wait(100);
+    }
+  }
 }
