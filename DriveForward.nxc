@@ -1,8 +1,8 @@
 #include "Constants.nxc"
 
 //Drives forward "dist" cm.
-sub DriveForward(float dist){
-  float drivePower = 50;
+sub DriveForward(float dist, int power){
+  float drivePower = power;
   float turnDegrees = ((dist * 1.05) / (WHEEL_DIAMETER * 3.141592)) * 360;
   if (dist <= 0) {
     drivePower *= -1;
