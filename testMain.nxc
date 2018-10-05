@@ -5,7 +5,7 @@
 #include "MoveToWall.nxc"
 
 int reverse = 1;
-int robotPower = 50;
+int robotPower = 80;
 
 sub DeliverCloseLeft(){
   //Finds and goes to wall
@@ -50,6 +50,9 @@ sub DeliverCloseRight(){
 
   //Drop book
   RotateUS(-90 * reverse);
+  FindWall(1, reverse);
+  MoveToWall(robotPower);
+
   DropBook();
   RotateUS(90 * reverse);
 
@@ -130,9 +133,7 @@ sub DeliverFarRight(){
 
 
 task main() {
-  DeliverCloseLeft();
-  //DeliverFarLeft();
-  //Wait(3000);
-  //DeliverCloseRight();
+  //DeliverCloseLeft();
+  DeliverCloseRight();
 
 }

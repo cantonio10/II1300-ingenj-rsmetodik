@@ -12,7 +12,7 @@ sub FindWall(int overComp, int rev)//lägg till argument close/far - 0/1, x = 1 
   while(savedDistance >= distanceToWall) //rotera och skanna avstånd, stanna när nya avståndet är längre än senast sparade
   {
     savedDistance = SensorUS(IN_2);
-    RotateMotorEx(OUT_BC, 50, 20.0, -100 * rev, true, true); //rotera
+    RotateMotorEx(OUT_BC, 100, 20.0, -100 * rev, true, true); //rotera
     distanceToWall = SensorUS(IN_2);
     if(savedDistance < distanceToWall && distanceToWall < CHECKWALLRANGE){
       break;
