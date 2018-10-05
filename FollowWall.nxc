@@ -16,7 +16,7 @@ sub FollowWall(int wallSide, int dist, int power){
     }
   }
   else{ //If car moves backwards
-    for(int i = 0; i > dist; i+= (-dist / ADJUST_CYCLES)){
+    for(int i = dist; i < 0; i-= (dist / ADJUST_CYCLES)){
       DriveForward(dist / ADJUST_CYCLES, power);
       if(wallSide == 1){ //Follow right wall
         AdjustAngle(0);

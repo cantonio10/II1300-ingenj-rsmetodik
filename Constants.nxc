@@ -3,6 +3,7 @@
 #define WHEEL_DIAMETER 5.8
 
 #define ADJUST_DEGREES 5
+#define MAX_AJUST_DISTANCE 10
 #define ADJUST_CYCLES 8
 
 #define WHEEL_MOTORS OUT_BC
@@ -14,3 +15,5 @@
 //0 = till vänster. 90 grader är rakt fram osv.
 //USSR = Ultra Sound Start Rotation
 #define USSR 90
+#define CHECKWALLRANGE 100 //100cm
+#define DISTANCE_TO_WALL 30 //The distance the robot drieved forward to.

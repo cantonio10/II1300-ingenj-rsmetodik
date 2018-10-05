@@ -6,11 +6,13 @@ sub AdjustAngle(int direction){ // if int = 1, direction is medsols. If directio
   if(direction == 0){
     direction = -1;
   }
+  float distFromWall = SensorUS(IN_2) - DISTANCE_TO_WALL;
+  float adjustment = ((distFromWall^2) / (MAX_AJUST_DISTANCE^2)) * ADJUST_DEGREES;
 
-  if(SensorUS(IN_2) > 30){
-    RotateRobot(-ADJUST_DEGREES * direction);
+  if(SensorUS(IN_2) > DISTANCE_TO_WALL){
+    RotateRobot(-adjustment * direction);
   }
   else{
-    RotateRobot(ADJUST_DEGREES * direction);
+    RotateRobot(-adjustment * direction);
   }
 }

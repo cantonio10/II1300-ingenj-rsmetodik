@@ -16,16 +16,14 @@ sub RotateUS(float deg)
   }
   else if(currentRotation + deg <= 0){
     //Ex: currentRotation = 50, deg = -90 så får man ut -40, så att man inte roterar för långt.
-    deg = deg + currentRotation;
+    deg -= (currentRotation + deg);
   }
 
-  int turnFactor = 100;
+  int turnFactor = 50;
   //Om graderna som ska roteras är negativa, invertera då rotationen genom att invertera "turnFactor"
-  if(deg < 0){
-    turnFactor *= -1;
-  }
   currentRotation += deg;
-  RotateMotor(THIRD_MOTOR, 50, deg / 1.5);
+
+  RotateMotor(THIRD_MOTOR, turnFactor, deg / 1.5);
   Wait(500);
 }
 
@@ -35,6 +33,6 @@ sub DropBook(){
   RotateMotor(THIRD_MOTOR, 65, rotateAmount);
   Wait(1000);
   //Återställer tillbaka sin rotation till vad den var innan tippningen
-  RotateMotor(THIRD_MOTOR, -65, rotateAmount-57);
+  RotateMotor(THIRD_MOTOR, -65, rotateAmount);
   Wait(500);
 }

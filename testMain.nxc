@@ -15,7 +15,7 @@ sub DeliverCloseLeft(){
   //Rotates head and findswall again
   RotateUS(90);
   Wait(500);
-  RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
+  RotateMotorEx(OUT_BC, 50, 300.0 * reverse, 100, true, true);
   Wait(500);
   FindWall(0, reverse);
 
@@ -24,6 +24,9 @@ sub DeliverCloseLeft(){
 
   //Drop book
   RotateUS(-90 * reverse);
+  FindWall(1, reverse);
+  MoveToWall(robotPower);
+
   DropBook();
 
   //Drives back to original location
@@ -38,9 +41,9 @@ sub DeliverCloseRight(){
   //Rotates head and findswall again
   RotateUS(-90);
   Wait(500);
-  RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
+  RotateMotorEx(OUT_BC, 50, 300.0, 100 * reverse, true, true);
   Wait(500);
-  FindWall(0, reverse);
+  FindWall(1, reverse);
 
   //Drive to drop location
   FollowWall(LEFT, 250, robotPower);
@@ -48,9 +51,11 @@ sub DeliverCloseRight(){
   //Drop book
   RotateUS(-90 * reverse);
   DropBook();
+  RotateUS(90 * reverse);
 
   //Drives back to original location
   FollowWall(RIGHT, -250, robotPower);
+  RotateUS(90);
 }
 sub DeliverFarLeft(){
   //Finds and goes to wall
@@ -60,26 +65,25 @@ sub DeliverFarLeft(){
   //Rotates head and findswall again
   RotateUS(90);
   Wait(500);
-  RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
+  RotateMotorEx(OUT_BC, 50, 300.0 * reverse, 100, true, true);
   Wait(500);
   FindWall(0, reverse);
 
   //Drive to drop location
   FollowWall(RIGHT, 250, robotPower);
 
-  /*
-  Drive across the corridor...
-  Fix rotation etc
-  */
+  RotateUS(-90);
+  FindWall(1, reverse);
+  DriveForward(-200, robotPower);
+  FindWall(1, reverse);
 
   //Drop book
   RotateUS(-90 * reverse);
   DropBook();
 
-  /*
-  Drive BACK across the corridor...
-  Fix rotation etc
-  */
+  DriveForward(-200, robotPower);
+  RotateUS(90);
+  FindWall(1, reverse);
 
   //Drives back to original location
   FollowWall(RIGHT, -250, robotPower);
@@ -126,7 +130,9 @@ sub DeliverFarRight(){
 
 
 task main() {
-  //DeliverCloseLeft();
-  DeliverCloseRight();
+  DeliverCloseLeft();
+  //DeliverFarLeft();
+  //Wait(3000);
+  //DeliverCloseRight();
 
 }
