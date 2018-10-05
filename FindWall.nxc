@@ -1,4 +1,5 @@
-sub FindWall()//lägg till argument close/far - 0/1, x = 1 gör att man hittar närmaste vägg och vänder sig 180grader till motsatt vägg.
+#include "Constants.nxc"
+sub FindWall(int overComp, int rev)//lägg till argument close/far - 0/1, x = 1 gör att man hittar närmaste vägg och vänder sig 180grader till motsatt vägg.
 {
   float savedDistance = 1.0;
   float distanceToWall = 0;
@@ -11,14 +12,16 @@ sub FindWall()//lägg till argument close/far - 0/1, x = 1 gör att man hittar n
   while(savedDistance >= distanceToWall && distanceToWall < 150) //rotera och skanna avstånd, stanna när nya avståndet är längre än senast sparade
   {
     savedDistance = SensorUS(IN_2); //spara värdet från sensor
-    RotateMotorEx(OUT_BC, 50, 20.0, -100, true, true); //rotera
+    RotateMotorEx(OUT_BC, 50, 20.0, -100 * rev, true, true); //rotera
     Wait(500);
     distanceToWall = SensorUS(IN_2); //skanna nya värdet efter rotation
     Wait(500);
   }
 
   Wait(500);
-  RotateMotorEx(OUT_BC, 50, 80.0, 100, true, true); //eftersom den överroterar under skannandet så roterar vi tillbaka lite
+  if(overComp == 1){
+    RotateMotorEx(OUT_BC, 50, 80.0, 100 * rev, true, true); //eftersom den överroterar under skannandet så roterar vi tillbaka lite
+  }
   Wait(500);
 
 

@@ -1,0 +1,17 @@
+#include "Constants.nxc"
+#include "DriveForward.nxc"
+
+
+float CalculateAngle(float dist){
+  SetSensorUltrasonic(IN_2);
+  float distToWall = SensorUS(IN_2);
+  float temp = (distToWall - 30.0) / dist;
+  float angle = atand(temp) * 57.2958;
+  return angle;
+}
+
+
+task main(){
+  DriveForward(100);
+  RotateRobot(2 * CalculateAngle(100));
+}

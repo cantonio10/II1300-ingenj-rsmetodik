@@ -4,7 +4,7 @@
 //Få roboten att rotera 1080 grader med hjälp av "RotateRobot(1080)" när "directionFactor" = 1.
 //Sedan med ögonmått eller på något annat sätt räkna ut hur många grader som diffar. T.ex att roboten åker 60 grader för kort
 //Då så skriv in -60 på en av de två variablerna precis här under, beroende på om vinkeln roboten skulle åka var positiv eller negativ.
-#define POSITIVE1080ROTATIONDIFFERENCE -135
+#define POSITIVE1080ROTATIONDIFFERENCE -120
 #define NEGATIVE1080ROTATIONDIFFERENCE -130
 
 sub RotateRobot(float deg)
@@ -21,7 +21,7 @@ sub RotateRobot(float deg)
      else{
           directionFactor = (360 / (360 + (POSITIVE1080ROTATIONDIFFERENCE / 3)));
      }
-
+     //directionFactor = 1;
      float rotateDegrees = (circleCir / wheelCir) * deg * directionFactor;
 
      RotateMotorEx(WHEEL_MOTORS, 50, rotateDegrees, turnFactor, true, true);

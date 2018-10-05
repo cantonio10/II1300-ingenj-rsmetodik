@@ -1,42 +1,126 @@
 #include "FindWall.nxc"
-//#include "GoToWall.nxc"
+#include "FollowWall.nxc"
+#include "Constants.nxc"
 #include "ThirdMotor.nxc"
+#include "MoveToWall.nxc"
 
-mutex moveMutex;
+int reverse = 1;
 
-task sensorScan(){
-  while(true){
-    if (SensorUS(IN_2) < 30) {
-      Acquire(moveMutex);
-      Off(OUT_BC);
-    }
+sub DeliverCloseLeft(){
+  //Finds and goes to wall
+  FindWall(1, reverse);
+  MoveToWall(reverse);
 
-    SetSensorUltrasonic(IN_2);
-    SensorUS(IN_2);
-    Release(moveMutex);
+  //Rotates head and findswall again
+  RotateUS(90);
+  Wait(500);
+  RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
+  Wait(500);
+  FindWall(0, reverse);
 
-    }
+  //Drive to drop location
+  FollowWall(RIGHT, 250);
+
+  //Drop book
+  RotateUS(-90 * reverse);
+  DropBook();
+
+  //Drives back to original location
+  FollowWall(RIGHT, -250);
+}
+sub DeliverCloseRight(){
+  reverse = -1;
+  //Finds and goes to wall
+  FindWall(1, reverse);
+  MoveToWall(reverse);
+
+  //Rotates head and findswall again
+  RotateUS(90);
+  Wait(500);
+  RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
+  Wait(500);
+  FindWall(0, reverse);
+
+  //Drive to drop location
+  FollowWall(RIGHT, 250);
+
+  //Drop book
+  RotateUS(-90 * reverse);
+  DropBook();
+
+  //Drives back to original location
+  FollowWall(RIGHT, -250);
+}
+sub DeliverFarLeft(){
+  //Finds and goes to wall
+  FindWall(1, reverse);
+  MoveToWall(reverse);
+
+  //Rotates head and findswall again
+  RotateUS(90);
+  Wait(500);
+  RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
+  Wait(500);
+  FindWall(0, reverse);
+
+  //Drive to drop location
+  FollowWall(RIGHT, 250);
+
+  /*
+  Drive across the corridor...
+  Fix rotation etc
+  */
+
+  //Drop book
+  RotateUS(-90 * reverse);
+  DropBook();
+
+  /*
+  Drive BACK across the corridor...
+  Fix rotation etc
+  */
+
+  //Drives back to original location
+  FollowWall(RIGHT, -250);
+}
+sub DeliverFarRight(){
+  reverse = -1;
+  //Finds and goes to wall
+  FindWall(1, reverse);
+  MoveToWall(reverse);
+
+  //Rotates head and findswall again
+  RotateUS(90);
+  Wait(500);
+  RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
+  Wait(500);
+  FindWall(0, reverse);
+
+  //Drive to drop location
+  FollowWall(RIGHT, 250);
+
+  /*
+  Drive BACK across the corridor...
+  Fix rotation etc
+  */
+
+  //Drop book
+  RotateUS(-90 * reverse);
+  DropBook();
+
+  /*
+  Drive BACK across the corridor...
+  Fix rotation etc
+  */
+
+  //Drives back to original location
+  FollowWall(RIGHT, -250);
 }
 
-task movetoWall(){
-  Acquire(moveMutex);
 
-  while(SensorUS(IN_2) > 30){
-    RotateMotorEx(OUT_BC, 30, 5210, 0, true, true);
-    Release(moveMutex);
-  }
-  RotateMotorEx(OUT_BC, 50, 440.0, 100, true, true);
-  Wait(500);
-  RotateUS(180);
-  Wait(500);
-  FindWall();
-}
 
 task main() {
-  FindWall();
-  Precedes(movetoWall, sensorScan);
-  SetSensorUltrasonic(IN_2);
-  //DropBook();
-  //FindWall();
-  //RotateMotorEx(OUT_BC, 70, 0, 0, true, true);
+  DeliverCloseLeft();
+  //DeliverCloseRight();
+
 }

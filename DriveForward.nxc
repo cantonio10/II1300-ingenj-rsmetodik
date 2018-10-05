@@ -2,6 +2,11 @@
 
 //Drives forward "dist" cm.
 sub DriveForward(float dist){
-  float turnDegrees = (dist / (WHEEL_DIAMETER * 3.141592)) * 360;
-  RotateMotorEx(WHEEL_MOTORS, 50, turnDegrees, 0, true, true);
+  float drivePower = 50;
+  float turnDegrees = ((dist * 1.05) / (WHEEL_DIAMETER * 3.141592)) * 360;
+  if (dist <= 0) {
+    drivePower *= -1;
+    turnDegrees *= -1;
+  }
+  RotateMotorEx(WHEEL_MOTORS, drivePower, turnDegrees, 0, true, true);
 }
