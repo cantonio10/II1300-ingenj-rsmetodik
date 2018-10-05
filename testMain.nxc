@@ -3,39 +3,8 @@
 #include "Constants.nxc"
 #include "ThirdMotor.nxc"
 #include "MoveToWall.nxc"
-//#include "DriveForward.nxc"
 
 int reverse = 1;
-/*
-mutex moveMutex;
-
-task sensorScan(){
-  while(true){
-    if (SensorUS(IN_2) < 30) {
-      Acquire(moveMutex);
-      Off(OUT_BC);
-      }
-
-    SetSensorUltrasonic(IN_2);
-    SensorUS(IN_2);
-    Release(moveMutex);
-
-    if (SensorUS(IN_2) < 30) {
-      Off(OUT_BC);
-      break;
-      }
-    }
-}
-
-task movetoWall(){
-  Acquire(moveMutex);
-
-  while(SensorUS(IN_2) > 40){
-    RotateMotorEx(OUT_BC, 30, 700 * reverse, 0, true, true);
-    Release(moveMutex);
-  }
-}
-*/
 
 sub DeliverCloseLeft(){
   //Finds and goes to wall
@@ -49,11 +18,14 @@ sub DeliverCloseLeft(){
   Wait(500);
   FindWall(0, reverse);
 
-  //Precedes(movetoWall, sensorScan);
-
+  //Drive to drop location
   FollowWall(RIGHT, 250);
+
+  //Drop book
   RotateUS(-90 * reverse);
   DropBook();
+
+  //Drives back to original location
   FollowWall(RIGHT, -250);
 }
 sub DeliverCloseRight(){
@@ -69,18 +41,80 @@ sub DeliverCloseRight(){
   Wait(500);
   FindWall(0, reverse);
 
-  //Precedes(movetoWall, sensorScan);
-
+  //Drive to drop location
   FollowWall(RIGHT, 250);
+
+  //Drop book
   RotateUS(-90 * reverse);
   DropBook();
+
+  //Drives back to original location
   FollowWall(RIGHT, -250);
 }
 sub DeliverFarLeft(){
+  //Finds and goes to wall
+  FindWall(1, reverse);
+  MoveToWall(reverse);
 
+  //Rotates head and findswall again
+  RotateUS(90);
+  Wait(500);
+  RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
+  Wait(500);
+  FindWall(0, reverse);
+
+  //Drive to drop location
+  FollowWall(RIGHT, 250);
+
+  /*
+  Drive across the corridor...
+  Fix rotation etc
+  */
+
+  //Drop book
+  RotateUS(-90 * reverse);
+  DropBook();
+
+  /*
+  Drive BACK across the corridor...
+  Fix rotation etc
+  */
+
+  //Drives back to original location
+  FollowWall(RIGHT, -250);
 }
 sub DeliverFarRight(){
+  reverse = -1;
+  //Finds and goes to wall
+  FindWall(1, reverse);
+  MoveToWall(reverse);
 
+  //Rotates head and findswall again
+  RotateUS(90);
+  Wait(500);
+  RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
+  Wait(500);
+  FindWall(0, reverse);
+
+  //Drive to drop location
+  FollowWall(RIGHT, 250);
+
+  /*
+  Drive BACK across the corridor...
+  Fix rotation etc
+  */
+
+  //Drop book
+  RotateUS(-90 * reverse);
+  DropBook();
+
+  /*
+  Drive BACK across the corridor...
+  Fix rotation etc
+  */
+
+  //Drives back to original location
+  FollowWall(RIGHT, -250);
 }
 
 
