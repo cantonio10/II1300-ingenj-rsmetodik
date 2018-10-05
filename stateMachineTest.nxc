@@ -2,25 +2,38 @@ int state;
 
 task main(){
 
-  int choice=0;
+  int choice;
+  int choiceMade=0;
 
 SetSensorTouch(IN_1);
 SetSensorTouch(IN_4);
 
-if(Sensor(IN_1)==1){
-  choice++;
-}
-if(choice==1 && Sensor(IN_4)==1){
-  state=1;
-}
-if(choice==2 && Sensor(IN_4)==1)  {
-  state=2;
-}
-if(choice==3 && Sensor(IN_4)==1)  {
-  state=3;
-}
-if(choice==4 && Sensor(IN_4)==1)   {
-  state=4;
+until(choiceMade==1)
+{
+  if(Sensor(IN_1)==1)
+  {
+    choice++;
+  }
+  if(choice==1 && Sensor(IN_4)==1)
+  {
+    state=1;
+    choiceMade=1;
+  }
+  if(choice==2 && Sensor(IN_4)==1)
+  {
+    state=2;
+    choiceMade=1;
+  }
+  if(choice==3 && Sensor(IN_4)==1)
+  {
+    state=3;
+    choiceMade=1;
+  }
+  if(choice==4 && Sensor(IN_4)==1)
+  {
+    state=4;
+    choiceMade=1;
+  }
 }
 
   switch(state){
@@ -29,30 +42,34 @@ if(choice==4 && Sensor(IN_4)==1)   {
       OnFwd(OUT_B,50);
       Wait(1000);
       choice=0;
-
+      choiceMade=0;
       break;
 
     case 2:
       OnFwd(OUT_C,50);
       Wait(1000);
       choice=0;
-
+      choiceMade=0;
       break;
 
     case 3:
       OnFwd(OUT_B,-50);
       Wait(1000);
       choice=0;
-
-
+      choiceMade=0;
       break;
 
     case 4:
       OnFwd(OUT_C,-50);
       Wait(1000);
       choice=0;
+      choiceMade=0;
       break;
 
+    default:
+      OnFwd(OUT_BC,-50);
+      Wait(1000);
+      break;
 
   }
 
