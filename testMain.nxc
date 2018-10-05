@@ -5,11 +5,12 @@
 #include "MoveToWall.nxc"
 
 int reverse = 1;
+int robotPower = 50;
 
 sub DeliverCloseLeft(){
   //Finds and goes to wall
   FindWall(1, reverse);
-  MoveToWall(reverse);
+  MoveToWall(robotPower);
 
   //Rotates head and findswall again
   RotateUS(90);
@@ -19,42 +20,42 @@ sub DeliverCloseLeft(){
   FindWall(0, reverse);
 
   //Drive to drop location
-  FollowWall(RIGHT, 250);
+  FollowWall(RIGHT, 250, robotPower);
 
   //Drop book
   RotateUS(-90 * reverse);
   DropBook();
 
   //Drives back to original location
-  FollowWall(RIGHT, -250);
+  FollowWall(RIGHT, -250, robotPower);
 }
 sub DeliverCloseRight(){
   reverse = -1;
   //Finds and goes to wall
   FindWall(1, reverse);
-  MoveToWall(reverse);
+  MoveToWall(robotPower);
 
   //Rotates head and findswall again
-  RotateUS(90);
+  RotateUS(-90);
   Wait(500);
   RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
   Wait(500);
   FindWall(0, reverse);
 
   //Drive to drop location
-  FollowWall(RIGHT, 250);
+  FollowWall(LEFT, 250, robotPower);
 
   //Drop book
   RotateUS(-90 * reverse);
   DropBook();
 
   //Drives back to original location
-  FollowWall(RIGHT, -250);
+  FollowWall(RIGHT, -250, robotPower);
 }
 sub DeliverFarLeft(){
   //Finds and goes to wall
   FindWall(1, reverse);
-  MoveToWall(reverse);
+  MoveToWall(robotPower);
 
   //Rotates head and findswall again
   RotateUS(90);
@@ -64,7 +65,7 @@ sub DeliverFarLeft(){
   FindWall(0, reverse);
 
   //Drive to drop location
-  FollowWall(RIGHT, 250);
+  FollowWall(RIGHT, 250, robotPower);
 
   /*
   Drive across the corridor...
@@ -81,13 +82,13 @@ sub DeliverFarLeft(){
   */
 
   //Drives back to original location
-  FollowWall(RIGHT, -250);
+  FollowWall(RIGHT, -250, robotPower);
 }
 sub DeliverFarRight(){
   reverse = -1;
   //Finds and goes to wall
   FindWall(1, reverse);
-  MoveToWall(reverse);
+  MoveToWall(robotPower);
 
   //Rotates head and findswall again
   RotateUS(90);
@@ -97,11 +98,16 @@ sub DeliverFarRight(){
   FindWall(0, reverse);
 
   //Drive to drop location
-  FollowWall(RIGHT, 250);
+  FollowWall(RIGHT, 250, robotPower);
 
   /*
   Drive BACK across the corridor...
   Fix rotation etc
+  */
+  /*
+  RotateUS(-90);
+  FindWall(0, reverse);
+  DriveForward(-corri)
   */
 
   //Drop book
@@ -114,13 +120,13 @@ sub DeliverFarRight(){
   */
 
   //Drives back to original location
-  FollowWall(RIGHT, -250);
+  FollowWall(RIGHT, -250, robotPower);
 }
 
 
 
 task main() {
-  DeliverCloseLeft();
-  //DeliverCloseRight();
+  //DeliverCloseLeft();
+  DeliverCloseRight();
 
 }

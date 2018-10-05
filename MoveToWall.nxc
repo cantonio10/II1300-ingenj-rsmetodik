@@ -1,11 +1,11 @@
 #include "Constants.nxc"
 
-sub MoveToWall(int reverse){
+sub MoveToWall(int power){
   SetSensorUltrasonic(IN_2);
   do{
-    RotateMotorEx(OUT_BC, 30, 700 * reverse, 0, true, true);
+    RotateMotorEx(OUT_BC, power, 700, 0, true, true);
   }
-  while (SensorUS(IN_2) > 40) {
+  while (SensorUS(IN_2) > 50) {
     //Stay in loop until close to the wall
   }
   Off(WHEEL_MOTORS);

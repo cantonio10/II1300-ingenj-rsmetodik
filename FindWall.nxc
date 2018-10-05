@@ -9,7 +9,7 @@ sub FindWall(int overComp, int rev)//lägg till argument close/far - 0/1, x = 1 
   SetSensorUltrasonic(IN_2); //sensorn är kopplad till input 2
 
 
-  while(savedDistance >= distanceToWall && distanceToWall < 150) //rotera och skanna avstånd, stanna när nya avståndet är längre än senast sparade
+  while(savedDistance >= distanceToWall && distanceToWall < 100) //rotera och skanna avstånd, stanna när nya avståndet är längre än senast sparade
   {
     savedDistance = SensorUS(IN_2); //spara värdet från sensor
     RotateMotorEx(OUT_BC, 50, 20.0, -100 * rev, true, true); //rotera
