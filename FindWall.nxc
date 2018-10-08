@@ -37,7 +37,7 @@ sub FindWall(int overComp, int rev)//lägg till argument close/far - 0/1, x = 1 
 
   Wait(500);
   if(overComp == 1){
-    RotateMotorEx(OUT_BC, 50, 80.0 / 2.0, 100 * rev, true, true); //eftersom den överroterar under skannandet så roterar vi tillbaka lite
+    RotateMotorEx(OUT_BC, 50, 80.0 / 4.0, 100 * rev, true, true); //eftersom den överroterar under skannandet så roterar vi tillbaka lite
   }
   Wait(500);
 
