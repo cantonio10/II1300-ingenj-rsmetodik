@@ -4,7 +4,7 @@
 
 #define ADJUST_DEGREES 5
 #define MAX_AJUST_DISTANCE 10
-#define ADJUST_CYCLES 8
+#define ADJUST_CYCLES 2
 
 #define WHEEL_MOTORS OUT_BC
 #define THIRD_MOTOR OUT_A
@@ -16,4 +16,4 @@
 //USSR = Ultra Sound Start Rotation
 #define USSR 90
 #define CHECKWALLRANGE 100 //100cm
-#define DISTANCE_TO_WALL 30 //The distance the robot drieved forward to.
+#define DISTANCE_TO_WALL 40 //The distance the robot drieved forward to.

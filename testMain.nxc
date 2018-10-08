@@ -5,7 +5,7 @@
 #include "MoveToWall.nxc"
 
 int reverse = 1;
-int robotPower = 80;
+int robotPower = 60;
 
 sub DeliverCloseLeft(){
   //Finds and goes to wall
@@ -15,7 +15,7 @@ sub DeliverCloseLeft(){
   //Rotates head and findswall again
   RotateUS(90);
   Wait(500);
-  RotateMotorEx(OUT_BC, 50, 300.0 * reverse, 100, true, true);
+  RotateMotorEx(OUT_BC, 50, 360.0 * reverse, 100, true, true);
   Wait(500);
   FindWall(0, reverse);
 
@@ -30,12 +30,12 @@ sub DeliverCloseLeft(){
   DropBook();
 
   //Drives back to original location
-  FollowWall(RIGHT, -250, robotPower);
+  //FollowWall(RIGHT, -250, robotPower);
 }
 sub DeliverCloseRight(){
   reverse = -1;
   //Finds and goes to wall
-  FindWall(1, reverse);
+  FindWall(1, reverse); //no compensation
   MoveToWall(robotPower);
 
   //Rotates head and findswall again
@@ -43,7 +43,7 @@ sub DeliverCloseRight(){
   Wait(500);
   RotateMotorEx(OUT_BC, 50, 300.0, 100 * reverse, true, true);
   Wait(500);
-  FindWall(1, reverse);
+  FindWall(0, reverse); //no compensation
 
   //Drive to drop location
   FollowWall(LEFT, 250, robotPower);
@@ -57,8 +57,8 @@ sub DeliverCloseRight(){
   RotateUS(90 * reverse);
 
   //Drives back to original location
-  FollowWall(RIGHT, -250, robotPower);
-  RotateUS(90);
+  //FollowWall(RIGHT, -250, robotPower);
+  //RotateUS(90);
 }
 sub DeliverFarLeft(){
   //Finds and goes to wall
@@ -68,7 +68,7 @@ sub DeliverFarLeft(){
   //Rotates head and findswall again
   RotateUS(90);
   Wait(500);
-  RotateMotorEx(OUT_BC, 50, 300.0 * reverse, 100, true, true);
+  RotateMotorEx(OUT_BC, 50, 360.0 * reverse, 100, true, true);
   Wait(500);
   FindWall(0, reverse);
 
@@ -77,14 +77,15 @@ sub DeliverFarLeft(){
 
   RotateUS(-90);
   FindWall(1, reverse);
-  DriveForward(-200, robotPower);
+  DriveForward(-100, robotPower);
   FindWall(1, reverse);
+  MoveToWall(robotPower);
 
   //Drop book
-  RotateUS(-90 * reverse);
+  //RotateUS(-90 * reverse);
   DropBook();
 
-  DriveForward(-200, robotPower);
+  DriveForward(-100, robotPower);
   RotateUS(90);
   FindWall(1, reverse);
 
@@ -98,42 +99,39 @@ sub DeliverFarRight(){
   MoveToWall(robotPower);
 
   //Rotates head and findswall again
-  RotateUS(90);
+  RotateUS(-90);
   Wait(500);
-  RotateMotorEx(OUT_BC, 50, 400.0 * reverse, 100, true, true);
+  RotateMotorEx(OUT_BC, 50, 360.0 * reverse, 100, true, true);
   Wait(500);
   FindWall(0, reverse);
 
   //Drive to drop location
-  FollowWall(RIGHT, 250, robotPower);
+  FollowWall(LEFT, 250, robotPower);
 
-  /*
-  Drive BACK across the corridor...
-  Fix rotation etc
-  */
-  /*
-  RotateUS(-90);
-  FindWall(0, reverse);
-  DriveForward(-corri)
-  */
+  RotateUS(90);
+  FindWall(1, reverse);
+  DriveForward(-100, robotPower);
+  FindWall(1, reverse);
+  MoveToWall(robotPower);
 
   //Drop book
-  RotateUS(-90 * reverse);
+  //RotateUS(-90 * reverse);
   DropBook();
 
-  /*
-  Drive BACK across the corridor...
-  Fix rotation etc
-  */
+  DriveForward(-140, robotPower);
+  RotateUS(-90);
+  FindWall(1, reverse);
 
   //Drives back to original location
-  FollowWall(RIGHT, -250, robotPower);
+  FollowWall(LEFT, -250, robotPower);
 }
 
 
 
 task main() {
   //DeliverCloseLeft();
-  DeliverCloseRight();
+  //DeliverCloseRight();
+  //DeliverFarLeft();
+  DeliverFarRight();
 
 }

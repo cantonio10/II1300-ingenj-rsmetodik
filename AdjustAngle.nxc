@@ -1,18 +1,23 @@
 #include "Constants.nxc"
 #include "RotateRobot.nxc"
 
+float lastAngle = 0;
 sub AdjustAngle(int direction){ // if int = 1, direction is medsols. If direction = 0 then motsols.
   SetSensorUltrasonic(IN_2);
   if(direction == 0){
     direction = -1;
   }
   float distFromWall = SensorUS(IN_2) - DISTANCE_TO_WALL;
+  if(distFromWall >= MAX_AJUST_DISTANCE){
+    distFromWall = MAX_AJUST_DISTANCE;
+  }
   float adjustment = ((distFromWall^2) / (MAX_AJUST_DISTANCE^2)) * ADJUST_DEGREES;
 
   if(SensorUS(IN_2) > DISTANCE_TO_WALL){
-    RotateRobot(-adjustment * direction);
+    RotateRobot(-(adjustment + (lastAngle/2)) * direction);
   }
   else{
-    RotateRobot(-adjustment * direction);
+    RotateRobot(-(adjustment + (lastAngle/2)) * direction);
   }
+  lastAngle = -(adjustment + (lastAngle/2)) * direction;
 }
