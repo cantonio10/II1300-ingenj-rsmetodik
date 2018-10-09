@@ -73,7 +73,7 @@ sub DeliverCloseRight(){
 }
 sub DeliverFarLeft(){
   //Finds and goes to wall
-  //RotateUS(5);
+  RotateUS(5);
   FindWall(1, reverse);
   MoveToWall(robotPower);
 
@@ -87,7 +87,7 @@ sub DeliverFarLeft(){
   //Drive to drop location
   FollowWall(RIGHT, 250, robotPower);
 
-  RotateUS(-90);
+  RotateUS(-85);
   FindWall(1, reverse);
   DriveForward(-110, robotPower);
   FindWall(1, reverse);
@@ -135,7 +135,7 @@ sub DeliverFarRight(){
   RotateUS(10);
   DriveForward(-140, robotPower);
   RotateUS(-90);
-  FindWall(1, -reverse);
+  FindWall(1, reverse);
 
   //Drives back to original location
   FollowWall(LEFT, -250, robotPower);
@@ -146,7 +146,7 @@ sub DeliverFarRight(){
 task main() {
   //DeliverCloseLeft();
   //DeliverCloseRight();
-  //DeliverFarLeft();
-  DeliverFarRight();
+  DeliverFarLeft();
+  //DeliverFarRight();
 
 }
