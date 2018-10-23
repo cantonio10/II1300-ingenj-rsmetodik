@@ -1,26 +1,43 @@
 #include "Constants.nxc"
 sub FindWall(int overComp, int rev)//lägg till argument close/far - 0/1, x = 1 gör att man hittar närmaste vägg och vänder sig 180grader till motsatt vägg.
 {
-  float savedDistance = 1.0;
-  float distanceToWall = 0;
+  float savedDistance = 1000;
+  float distanceToWall = 999;
   float x = 0; //om x =0 körs allt som vanligt och den hittar närmaste väggen. om x=1 hittar den närmaste och vänder sig 180grader.
 
 
   SetSensorUltrasonic(IN_2); //sensorn är kopplad till input 2
 
 
-  while(savedDistance >= distanceToWall && distanceToWall < 100) //rotera och skanna avstånd, stanna när nya avståndet är längre än senast sparade
+  while(savedDistance >= distanceToWall) //rotera och skanna avstånd, stanna när nya avståndet är längre än senast sparade
   {
-    savedDistance = SensorUS(IN_2); //spara värdet från sensor
+    if(SensorUS(IN_2) < CHECKWALLRANGE){
+      savedDistance = SensorUS(IN_2);
+      RotateMotorEx(OUT_BC, 100, 20.0, -100 * rev, true, true); //rotera
+      distanceToWall = SensorUS(IN_2);
+      if(savedDistance < distanceToWall && distanceToWall < CHECKWALLRANGE){
+        break;
+      }
+    }
+    else{
+      RotateMotorEx(OUT_BC, 100, 20.0, -100 * rev, true, true); //rotera
+    }
+
+
+/*
+    if(SensorUS(IN_2) < CHECKWALLRANGE)
+      savedDistance = SensorUS(IN_2); //spara värdet från sensor
     RotateMotorEx(OUT_BC, 50, 20.0, -100 * rev, true, true); //rotera
     Wait(500);
-    distanceToWall = SensorUS(IN_2); //skanna nya värdet efter rotation
+    if(SensorUS(IN_2) < CHECKWALLRANGE)
+      distanceToWall = SensorUS(IN_2); //skanna nya värdet efter rotation
     Wait(500);
+    */
   }
 
   Wait(500);
   if(overComp == 1){
-    RotateMotorEx(OUT_BC, 50, 80.0, 100 * rev, true, true); //eftersom den överroterar under skannandet så roterar vi tillbaka lite
+    RotateMotorEx(OUT_BC, 50, 80.0 / 4.0, 100 * rev, true, true); //eftersom den överroterar under skannandet så roterar vi tillbaka lite
   }
   Wait(500);
 
